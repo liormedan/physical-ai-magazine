@@ -1,0 +1,6 @@
+{
+  "name": "newsroom",
+  "version": "0.1.0",
+  "description": "Physical AI Magazine newsroom: a pane, a band and /newsroom commands for the project's Paperclip agent team. Lives in this project only.",
+  "types": "./types/index.d.ts"
+}

@@ -1,0 +1,26 @@
+{
+  "$comment": "Newsroom team definition. scripts/newsroom-setup.mjs applies it to the project's Paperclip instance; run it again after any change (/newsroom setup). Budgets are USD per month and start conservative; adjust after a week of measured spend.",
+  "company": {
+    "name": "Physical AI Magazine",
+    "goal": "Publish an accurate bilingual (Hebrew + English) Physical AI issue every day by 07:30, and find the magazine's name.",
+    "monthlyBudgetUsd": 120
+  },
+  "defaults": {
+    "adapter": "claude_local",
+    "cwd": "C:\\pysical ai magazine",
+    "sharedInstructions": "newsroom/agents/_shared.md"
+  },
+  "agents": [
+    { "key": "editor", "name": "Editor-in-Chief", "title": "עורך ראשי", "role": "ceo", "reportsTo": null, "instructions": "newsroom/agents/editor-in-chief.md", "monthlyBudgetUsd": 25, "status": "active" },
+    { "key": "reporter", "name": "Reporter", "title": "כתב-חוקר", "reportsTo": "editor", "instructions": "newsroom/agents/reporter.md", "monthlyBudgetUsd": 35, "status": "active" },
+    { "key": "checker", "name": "Fact-checker", "title": "בודק עובדות", "reportsTo": "editor", "instructions": "newsroom/agents/fact-checker.md", "monthlyBudgetUsd": 25, "status": "active" },
+    { "key": "publisher", "name": "Language editor & Publisher", "title": "עורך לשון ומפרסם", "reportsTo": "editor", "instructions": "newsroom/agents/language-editor.md", "monthlyBudgetUsd": 15, "status": "active" },
+    { "key": "brand", "name": "Brand & Design", "title": "מעצב ומותג", "reportsTo": "editor", "instructions": "newsroom/agents/brand-designer.md", "monthlyBudgetUsd": 15, "status": "active" },
+    { "key": "developer", "name": "Developer", "title": "מפתח", "reportsTo": "editor", "instructions": "newsroom/agents/developer.md", "monthlyBudgetUsd": 5, "status": "paused" }
+  ],
+  "routines": [
+    { "key": "daily-issue", "title": "גיליון היום", "cron": "0 7 * * *", "assignee": "editor", "description": "Open today's issue and run it through Reporter -> Fact-checker -> Language editor & Publisher, per newsroom/agents/editor-in-chief.md." },
+    { "key": "weekly-names", "title": "סבב שמות שבועי", "cron": "0 10 * * 0", "assignee": "brand", "description": "Propose 3 new name candidates per newsroom/agents/brand-designer.md and ask Lior to decide." },
+    { "key": "weekly-review", "title": "סיכום שבועי", "cron": "0 12 * * 5", "assignee": "editor", "description": "Weekly review per newsroom/agents/editor-in-chief.md." }
+  ]
+}

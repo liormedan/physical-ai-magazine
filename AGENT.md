@@ -1,5 +1,7 @@
 # Daily agent instructions — Physical AI Magazine
 
+> Legacy single-agent flow, used by the `physical-ai-magazine-daily` scheduled task until the newsroom team takes over. The team's instructions are in `newsroom/agents/`; see `newsroom/README.md`.
+
 Working directory: `C:\pysical ai magazine`. Goal: publish one new bilingual (Hebrew + English) issue about Physical AI per day.
 
 ## Steps

@@ -8,7 +8,8 @@
     "start": "next start",
     "validate": "node scripts/validate.mjs",
     "og": "node scripts/og.mjs",
-    "publish-issue": "node scripts/publish.mjs"
+    "publish-issue": "node scripts/publish.mjs",
+    "newsroom": "node scripts/newsroom.mjs"
   },
   "dependencies": {
     "next": "^16.4.2",
