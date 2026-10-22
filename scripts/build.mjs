@@ -1,6 +1,6 @@
 // Builds the static bilingual magazine from data/issues/*.json into site/.
 // Usage: node scripts/build.mjs   (exits non-zero if any issue is invalid)
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, existsSync, cpSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { coverSvg, catIcon } from './graphics.mjs';
@@ -8,6 +8,8 @@ import { coverSvg, catIcon } from './graphics.mjs';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const dataDir = join(root, 'data', 'issues');
 const siteDir = join(root, 'site');
+const staticDir = join(root, 'static');
+const SITE_URL = 'https://physical-ai-magazine.vercel.app';
 
 const CATEGORIES = {
   robotics: { he: 'רובוטיקה', en: 'Robotics' },
@@ -107,13 +109,25 @@ try{l=localStorage.getItem(k)||(((navigator.language||'').indexOf('he')===0)?'he
 function set(v){d.setAttribute('lang',v);d.setAttribute('dir',v==='he'?'rtl':'ltr');d.setAttribute('data-lang',v);try{localStorage.setItem(k,v)}catch(e){}}
 set(l);document.addEventListener('click',function(e){if(e.target.closest('#lang')){set(d.getAttribute('data-lang')==='he'?'en':'he')}});})();`;
 
-function page({ title_he, title_en, body, base, number, date }) {
+function page({ title_he, title_en, desc_he, body, base, number, date, path }) {
+  const title = `${title_he} | ${title_en}`;
   return `<!doctype html>
 <html lang="he" dir="rtl" data-lang="he">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${esc(title_he)} | ${esc(title_en)}</title>
-<meta name="description" content="${esc(title_en)}">
-<script>${js}</script>
+<title>${esc(title)}</title>
+<meta name="description" content="${esc(desc_he)}">
+<link rel="canonical" href="${SITE_URL}/${path}">
+<meta property="og:type" content="${path ? 'article' : 'website'}">
+<meta property="og:site_name" content="מגזין פיזיקל AI | Physical AI Magazine">
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(desc_he)}">
+<meta property="og:url" content="${SITE_URL}/${path}">
+<meta property="og:image" content="${SITE_URL}/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="מגזין פיזיקל AI — שרטוט קווי של זרוע רובוטית על נייר">
+<meta property="og:locale" content="he_IL"><meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${SITE_URL}/og.png"><script>${js}</script>
 ${fonts}
 <style>${css}</style></head>
 <body>
@@ -161,13 +175,14 @@ if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
 
 rmSync(siteDir, { recursive: true, force: true });
 mkdirSync(join(siteDir, 'issues'), { recursive: true });
+if (existsSync(staticDir)) cpSync(staticDir, siteDir, { recursive: true });
 
 // issues are newest-first; issue number counts from the oldest
 const numberOf = (i) => issues.length - i;
 
 issues.forEach((issue, i) => {
   writeFileSync(join(siteDir, 'issues', `${issue.date}.html`),
-    page({ title_he: issue.headline_he, title_en: issue.headline_en, body: issueBody(issue, { home: false }), base: '../', number: numberOf(i), date: issue.date }));
+    page({ title_he: issue.headline_he, title_en: issue.headline_en, desc_he: issue.intro_he, body: issueBody(issue, { home: false }), base: '../', number: numberOf(i), date: issue.date, path: `issues/${issue.date}.html` }));
 });
 
 const [latest, ...older] = issues;
@@ -176,6 +191,6 @@ const archive = older.length
       `<li><span class="num">${bi(`גיליון ${numberOf(j + 1)}`, `No. ${numberOf(j + 1)}`)}</span><div><a href="issues/${it.date}.html">${bi(it.headline_he, it.headline_en)}</a><span class="src">${bi(fmtDate(it.date, 'he-IL'), fmtDate(it.date, 'en-US'))}</span></div></li>`).join('')}</ul>`
   : '';
 writeFileSync(join(siteDir, 'index.html'),
-  page({ title_he: 'מגזין פיזיקל AI', title_en: 'Physical AI Magazine', body: issueBody(latest, { home: true }) + archive, base: '', number: numberOf(0), date: latest.date }));
+  page({ title_he: 'מגזין פיזיקל AI', title_en: 'Physical AI Magazine', desc_he: 'יומן יומי של בינה גופנית, רובוטיקה ואוטונומיה — בעברית ובאנגלית.', body: issueBody(latest, { home: true }) + archive, base: '', number: numberOf(0), date: latest.date, path: '' }));
 
 console.log(`built ${issues.length} issue(s); latest ${latest.date}`);

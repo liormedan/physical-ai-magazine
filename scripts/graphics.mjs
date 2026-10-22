@@ -25,8 +25,15 @@ export function coverSvg(issue) {
   for (let i = 1; i < n; i++) {
     const len = i === 1 ? 70 + r() * 40 : 80 + r() * 90;
     if (i > 1) dir += (20 + r() * 50) * Math.PI / 180 * (r() < 0.75 ? 1 : -1);
-    x = Math.max(40, Math.min(W - 60, x + Math.cos(dir) * len));
-    y = Math.max(28, Math.min(H - 30, y + Math.sin(dir) * len));
+    // try the chosen bend, then mirrored ones, until the link stays inside the
+    // frame instead of being squashed against an edge onto the previous joint
+    let nx, ny;
+    for (const d of [dir, -dir, dir + Math.PI / 2, 0]) {
+      nx = Math.max(40, Math.min(W - 60, x + Math.cos(d) * len));
+      ny = Math.max(28, Math.min(H - 30, y + Math.sin(d) * len));
+      if (Math.hypot(nx - x, ny - y) > len * 0.7) { dir = d; break; }
+    }
+    x = nx; y = ny;
     pts.push([x, y]);
   }
   const [bx, by] = pts[0];
