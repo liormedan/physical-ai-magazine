@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-23",
+  "headline_he": "מודלי יסוד לרובוטים מתגברים: ידיים, מהירות והאצה בתעשייה",
+  "headline_en": "Foundation models for robots accelerate: hands, speed and industry adoption",
+  "intro_he": "גיליון הבכורה: מודל ענק ליד רובוטית, האצת הסקה בהומנואיד, ושחקנים תעשייתיים שמכניסים בינה גופנית לקווי המוצרים שלהם. כל הנתונים מדווחים על ידי החברות עצמן.",
+  "intro_en": "Inaugural issue: a huge model for robotic hands, faster inference on a humanoid, and industrial players bringing physical AI into their product lines. All figures are self-reported by the companies.",
+  "items": [
+    {
+      "category": "models",
+      "title_he": "מודל של 50 מיליארד פרמטרים ליד רובוטית זריזה",
+      "title_en": "50-billion-parameter model for dexterous robot hands",
+      "summary_he": "סטארט-אפ בשם Nature Will פרסם את Natura-1, מודל בגודל 50 מיליארד פרמטרים שמתמקד אך ורק בשליטה בידיים רובוטיות, ולא בתנועת גוף שלם או בהליכה.",
+      "summary_en": "Startup Nature Will released Natura-1, a 50-billion-parameter model focused solely on dexterous robotic hands rather than whole-body control or locomotion.",
+      "source_name": "Forbes",
+      "source_url": "https://www.forbes.com/sites/johnkoetsier/2026/10/13/startup-releases-50-billion-parameter-physical-general-foundation-model-for-instant-robot-intelligence/"
+    },
+    {
+      "category": "humanoids",
+      "title_he": "הומנואיד של Bear Robotics: זמן הסקה קטן פי שמונה",
+      "title_en": "Bear Robotics humanoid: inference time cut eightfold",
+      "summary_he": "לפי החברה, פלטפורמת הלמידה KINO-2 שרצה על תוכנת NVIDIA קיצרה את זמן ההסקה של מודל יסוד לרובוטיקה על ההומנואיד KR1 מ-500 מילישניות ל-60. מדובר בבדיקות פנימיות של החברה.",
+      "summary_en": "The company says its KINO-2 learning platform, running on NVIDIA software, cut a robotics foundation model's inference time on the KR1 humanoid from 500 ms to 60 ms. These are the company's internal tests.",
+      "source_name": "Interesting Engineering",
+      "source_url": "https://interestingengineering.com/ai-robotics/bear-robotics-humanoid-nvidia-inference-speedup"
+    },
+    {
+      "category": "industry",
+      "title_he": "Chery מציגה את CheryMind, מודל יסוד לבינה גופנית",
+      "title_en": "Chery unveils CheryMind, a physical AI foundation model",
+      "summary_he": "בכנס החדשנות שלה הציגה יצרנית הרכב Chery מודל יסוד ייעודי לבינה גופנית, שנועד לשמש גם מעבר לייצור רכבים. זרוע הרובוטיקה שלה, AiMOGA, הציגה את ההומנואיד הביתי Mobo.",
+      "summary_en": "At its innovation conference, carmaker Chery showed CheryMind, a domain-specific physical AI foundation model meant for uses beyond car manufacturing. Its robotics arm AiMOGA also showed the Mobo home-companion humanoid.",
+      "source_name": "GlobeNewswire",
+      "source_url": "https://www.globenewswire.com/news-release/2026/10/20/3384830/0/en/transcending-mobility-chery-unlocks-new-frontiers-as-automotive-tech-extends-into-broader-fields.html"
+    },
+    {
+      "category": "robotics",
+      "title_he": "YYForce חושפת את Workforce OS על בסיס כלי הבינה הגופנית של NVIDIA",
+      "title_en": "YYForce unveils Workforce OS built on NVIDIA physical AI tools",
+      "summary_he": "החברה הציגה ארכיטקטורת רובוטיקה עם פריסה בשלבים: מניווט ועבודת קבלה, דרך מניפולציה ניידת, ועד הומנואידים לעבודת שטח. הפרטים מגיעים מהודעה לעיתונות של החברה.",
+      "summary_en": "The company presented a robotics architecture with a phased rollout: from navigation and front-desk work, through mobile manipulation, to humanoid field operations. Details come from the company's press release.",
+      "source_name": "PR Newswire",
+      "source_url": "https://prnewswire.com/news-releases/yyforce-unveils-workforce-os-robotics-architecture-powered-by-nvidia-physical-ai-302915031.html"
+    }
+  ]
+}
