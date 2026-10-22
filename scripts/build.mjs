@@ -3,6 +3,7 @@
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { coverSvg, catIcon } from './graphics.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const dataDir = join(root, 'data', 'issues');
@@ -79,7 +80,8 @@ article.lead{padding:30px 0 32px;border-bottom:1px solid var(--rule)}
 article.lead h2{font-size:clamp(1.45rem,3.4vw,1.95rem)}
 article.lead p.sum{font-size:1.08rem}
 .cat{display:inline-flex;align-items:center;gap:8px;font-size:.74rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
-.cat i{width:7px;height:7px;border-radius:50%;background:var(--cc,var(--acc));box-shadow:0 0 0 3px color-mix(in srgb,var(--cc,var(--acc)) 18%,transparent)}
+.cat .ci{width:22px;height:22px;flex:none}
+.cover{display:block;width:100%;height:auto;color:var(--fg);margin:18px 0 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:6px 0}
 article h2{font-size:1.32rem;line-height:1.3;margin:6px 0 6px}
 article p.sum{margin:0 0 10px;max-width:68ch}
 .src{font-size:.84rem;color:var(--mut)}.src a{color:var(--mut)}.src a:hover{color:var(--acc)}
@@ -130,7 +132,7 @@ function issueBody(issue, { home }) {
   const items = issue.items.map((it, i) => {
     const c = CATEGORIES[it.category];
     return `<article class="${i === 0 ? 'lead' : ''}" style="--cc:var(--c-${it.category})">
-<div class="cat"><i></i>${bi(c.he, c.en)}</div>
+<div class="cat">${catIcon(it.category)}${bi(c.he, c.en)}</div>
 <div class="body"><h2>${bi(it.title_he, it.title_en)}</h2>
 <p class="sum">${bi(it.summary_he, it.summary_en)}</p>
 <div class="src">${bi('מקור', 'Source')}: <a href="${esc(it.source_url)}" rel="noopener" target="_blank">${esc(it.source_name)}</a></div></div></article>`;
@@ -139,6 +141,7 @@ function issueBody(issue, { home }) {
 <p class="date">${bi(home ? 'הגיליון האחרון' : 'מהארכיון', home ? 'Latest issue' : 'From the archive')}</p>
 <h1>${bi(issue.headline_he, issue.headline_en)}</h1>
 <p class="intro">${bi(issue.intro_he, issue.intro_en)}</p></div>
+${coverSvg(issue)}
 ${items}
 ${home ? '' : `<a class="back" href="../index.html">${bi('← לכל הגיליונות', '← All issues')}</a>`}`;
 }
