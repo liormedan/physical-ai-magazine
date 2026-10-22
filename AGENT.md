@@ -12,5 +12,5 @@ Working directory: `C:\pysical ai magazine`. Goal: publish one new bilingual (He
    - `items[]`: `category` (robotics | humanoids | models | autonomy | hardware | industry | research), `title_he`, `title_en`, `summary_he`, `summary_en` (2-3 sentences, own words, no copied passages), `source_name`, `source_url`
    - Hebrew is natural journalistic Hebrew, not word-for-word. Keep product and company names in Latin letters. English is the faithful translation of the Hebrew.
 6. Run `node scripts/build.mjs`. Fix any validation error and re-run until it succeeds.
-7. Publish: run `node scripts/publish.mjs` (builds, then deploys to Vercel production; site: https://physical-ai-magazine.vercel.app). Only publish if the build in step 6 passed. If deploy fails, report the error; do not retry in a loop.
-8. Report in Hebrew: the issue headline, number of items, and whether the build and deploy passed, with the live URL. Do not commit to git.
+7. Publish: run `node scripts/publish.mjs`. It builds, commits the new issue and pushes to `main`; Vercel is connected to the GitHub repo (liormedan/physical-ai-magazine) and deploys every push to https://physical-ai-magazine.vercel.app. Only publish if the build in step 6 passed. If the push fails, report the error; do not retry in a loop and do not force-push.
+8. Report in Hebrew: the issue headline, number of items, whether the build and push passed, and the live URL.
