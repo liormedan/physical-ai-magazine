@@ -1,0 +1,18 @@
+{
+  "name": "physical-ai-magazine",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "validate": "node scripts/validate.mjs",
+    "og": "node scripts/og.mjs",
+    "publish-issue": "node scripts/publish.mjs"
+  },
+  "dependencies": {
+    "next": "^16.4.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}

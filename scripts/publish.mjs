@@ -1,11 +1,12 @@
-// Validates/builds locally, then publishes by committing and pushing to main.
-// Vercel is connected to the GitHub repo and deploys every push to main.
-// Usage: node scripts/publish.mjs
+// Validates and builds the Next.js site locally, then publishes by committing
+// and pushing to main. Vercel is connected to the GitHub repo and deploys
+// every push to main. Usage: npm run publish-issue
 import { execSync } from 'node:child_process';
 const run = (cmd) => execSync(cmd, { stdio: 'inherit' });
 const out = (cmd) => execSync(cmd, { encoding: 'utf8' }).trim();
 
-run('node scripts/build.mjs');
+run('node scripts/validate.mjs');
+run('npm run build');
 
 if (out('git status --porcelain') === '') {
   console.log('nothing to publish: working tree clean');
