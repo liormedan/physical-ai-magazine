@@ -11,5 +11,16 @@
       "Bash(npx vercel:*)",
       "Bash(vercel:*)"
     ]
+  },
+  "enabledPlugins": {
+    "newsroom@pam-newsroom": true
+  },
+  "extraKnownMarketplaces": {
+    "pam-newsroom": {
+      "source": {
+        "source": "directory",
+        "path": "C:\\pysical ai magazine\\newsroom\\mod"
+      }
+    }
   }
 }

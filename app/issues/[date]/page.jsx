@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getIssues, getIssue } from '../../../lib/issues';
+import { getVideos } from '../../../lib/videos';
 import { Masthead, Issue, Bi } from '../../components';
 
 export const dynamicParams = false;
@@ -28,7 +29,7 @@ export default async function IssuePage({ params }) {
     <>
       <Masthead issue={issue} />
       <main className="wrap">
-        <Issue issue={issue} />
+        <Issue issue={issue} videos={getVideos()} />
         <Link className="back" href="/"><Bi he="← לכל הגיליונות" en="← All issues" /></Link>
       </main>
     </>

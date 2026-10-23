@@ -1,0 +1,17 @@
+{
+  "$comment": "Public companies and funds the market page tracks. `match` lists names that, when they appear in a story's English title, link that story to the ticker. scripts/market.mjs reads this file; change the basket here.",
+  "tickers": [
+    { "symbol": "NVDA", "name": "NVIDIA", "match": ["NVIDIA"], "group": "chips" },
+    { "symbol": "TSLA", "name": "Tesla", "match": ["Tesla", "Optimus"], "group": "humanoids" },
+    { "symbol": "MBLY", "name": "Mobileye", "match": ["Mobileye"], "group": "autonomy", "israel": true },
+    { "symbol": "ABBN.SW", "name": "ABB", "match": ["ABB"], "group": "industrial" },
+    { "symbol": "6954.T", "name": "Fanuc", "match": ["Fanuc", "FANUC"], "group": "industrial" },
+    { "symbol": "6506.T", "name": "Yaskawa", "match": ["Yaskawa"], "group": "industrial" },
+    { "symbol": "TER", "name": "Teradyne (Universal Robots)", "match": ["Teradyne", "Universal Robots"], "group": "industrial" },
+    { "symbol": "ISRG", "name": "Intuitive Surgical", "match": ["Intuitive"], "group": "medical" },
+    { "symbol": "SYM", "name": "Symbotic", "match": ["Symbotic"], "group": "logistics" },
+    { "symbol": "9880.HK", "name": "UBTech", "match": ["UBTech", "UBTECH"], "group": "humanoids" },
+    { "symbol": "BOTZ", "name": "Global X Robotics & AI ETF", "match": [], "group": "fund" },
+    { "symbol": "ROBO", "name": "ROBO Global Robotics & Automation ETF", "match": [], "group": "fund" }
+  ]
+}

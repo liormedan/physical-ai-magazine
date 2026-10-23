@@ -1,0 +1,5 @@
+{
+  "name": "pam-newsroom",
+  "owner": { "name": "Lior" },
+  "plugins": [{ "name": "newsroom", "source": "./" }]
+}

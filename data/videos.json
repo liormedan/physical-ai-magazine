@@ -1,0 +1,45 @@
+{
+  "updated": "2026-10-23",
+  "videos": [
+    {
+      "id": "Y3zb4o47yqA",
+      "title": "Unitree Introducing: H2-X Kung Fu Legend Guardian",
+      "channel": "Unitree",
+      "published": "2026-10-22",
+      "note_he": "סרטון ההשקה של Unitree להומנואיד H2-X.",
+      "note_en": "Unitree's launch video for the H2-X humanoid."
+    },
+    {
+      "id": "AoFwpf43wK0",
+      "title": "Figure All Hands 2026",
+      "channel": "Figure",
+      "published": "2026-10-22",
+      "note_he": "מפגש החברה השנתי של Figure.",
+      "note_en": "Figure's 2026 all-hands event."
+    },
+    {
+      "id": "GQHx67tzVCo",
+      "title": "Unitree Introducing: UniUni Intelligent Swarm Control System",
+      "channel": "Unitree",
+      "published": "2026-10-17",
+      "note_he": "מערכת השליטה של Unitree בנחיל רובוטים.",
+      "note_en": "Unitree's swarm control system for groups of robots."
+    },
+    {
+      "id": "dP_i7hRvGpE",
+      "title": "Machine, Assemble, Repair: How We Build Atlas",
+      "channel": "Boston Dynamics",
+      "published": "2026-10-15",
+      "note_he": "מאחורי הקלעים של ייצור Atlas ותיקונו.",
+      "note_en": "Behind the scenes of building and repairing Atlas."
+    },
+    {
+      "id": "9PICEmtfpWU",
+      "title": "Teaching a humanoid robot to play cornhole with Gemini 4 Argon",
+      "channel": "Google DeepMind",
+      "published": "2026-10-14",
+      "note_he": "Google DeepMind מלמדת הומנואיד משחק זריקה בעזרת Gemini 4 Argon.",
+      "note_en": "Google DeepMind teaches a humanoid a throwing game with Gemini 4 Argon."
+    }
+  ]
+}

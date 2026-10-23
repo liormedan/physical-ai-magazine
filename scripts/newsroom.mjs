@@ -54,17 +54,33 @@ async function start() {
   if (!existsSync(join(dataDir, 'instances', 'default', 'config.json')))
     throw new Error('Paperclip not onboarded here yet: npx -y -p node@24 -p paperclipai@latest paperclipai onboard --yes --data-dir newsroom/.paperclip');
   mkdirSync(dataDir, { recursive: true });
-  const log = openSync(logFile, 'a');
-  // a detached child that outlives this script, the mod and the Claude Code session
+  // Agents inherit the server's environment. Started from inside Claude Code
+  // (the mod, the desktop app), that carries the host session's CLAUDE_* and
+  // ANTHROPIC_* variables, which make a child `claude` expect the host to
+  // handle its auth; drop them so agents use the CLI's own sign-in.
+  const env = Object.fromEntries(Object.entries(process.env).filter(([k]) => !/^(CLAUDE|ANTHROPIC)/.test(k)));
+  Object.assign(env, { PAPERCLIP_TELEMETRY_DISABLED: '1', DO_NOT_TRACK: '1' });
   const cmd = `npx -y -p node@24 -p paperclipai@latest paperclipai run --data-dir "${dataDir}"`;
-  const child = isWin
-    // verbatim: Node would otherwise escape the inner quotes as \" , which cmd.exe misreads
-    ? spawn('cmd.exe', ['/d', '/s', '/c', `"${cmd}"`], { cwd: root, detached: true, windowsVerbatimArguments: true, stdio: ['ignore', log, log], windowsHide: true, env: { ...process.env, PAPERCLIP_TELEMETRY_DISABLED: '1', DO_NOT_TRACK: '1' } })
-    : spawn('sh', ['-c', cmd], { cwd: root, detached: true, stdio: ['ignore', log, log], env: { ...process.env, PAPERCLIP_TELEMETRY_DISABLED: '1', DO_NOT_TRACK: '1' } });
-  writeFileSync(pidFile, String(child.pid));
-  child.unref();
+  let pid;
+  if (isWin) {
+    // A process that outlives this script, the mod and the Claude Code session.
+    // It must own a console, hidden: a console-less (detached) server makes every
+    // process its agents start (each `claude`, each hook's `node`) open a new
+    // visible console window. Start-Process -WindowStyle Hidden gives the server
+    // one hidden console that the whole tree inherits.
+    const launcher = join(dataDir, 'server.cmd');
+    writeFileSync(launcher, `@echo off\r\ncd /d "${root}"\r\n${cmd} >> "${logFile}" 2>&1\r\n`);
+    const ps = `(Start-Process -FilePath cmd.exe -ArgumentList '/d','/c','"${launcher}"' -WindowStyle Hidden -PassThru).Id`;
+    pid = execFileSync('powershell.exe', ['-NoProfile', '-NonInteractive', '-Command', ps], { encoding: 'utf8', env, windowsHide: true }).trim();
+  } else {
+    const log = openSync(logFile, 'a');
+    const child = spawn('sh', ['-c', cmd], { cwd: root, detached: true, stdio: ['ignore', log, log], env });
+    child.unref();
+    pid = child.pid;
+  }
+  writeFileSync(pidFile, String(pid));
   for (let i = 0; i < 90; i++) {
-    if (await isUp()) return `השרת עלה (pid ${child.pid})`;
+    if (await isUp()) return `השרת עלה (pid ${pid})`;
     await new Promise((r) => setTimeout(r, 2000));
   }
   throw new Error(`the server did not answer within 3 minutes; see ${logFile}`);
@@ -148,12 +164,13 @@ async function setup() {
     if (!routine) {
       routine = await api('POST', `/companies/${company.id}/routines`, {
         title: r.title, description: r.description, assigneeAgentId: ids.agents[r.assignee], goalId: ids.goalId,
-        priority: 'high', status: 'active', concurrencyPolicy: 'skip_if_active', catchUpPolicy: 'enqueue_missed_with_cap',
+        priority: 'high', status: r.status ?? 'active', concurrencyPolicy: 'skip_if_active', catchUpPolicy: 'enqueue_missed_with_cap',
       });
       await api('POST', `/routines/${routine.id}/triggers`, { kind: 'schedule', cronExpression: r.cron, timezone: 'Asia/Jerusalem', label: r.cron });
-      log.push(`נוצרה שגרה: ${r.title} (${r.cron})`);
+      log.push(`נוצרה שגרה: ${r.title} (${r.cron}, ${r.status ?? 'active'})`);
     } else {
-      await api('PATCH', `/routines/${routine.id}`, { description: r.description, assigneeAgentId: ids.agents[r.assignee] });
+      if (routine.status !== (r.status ?? 'active')) log.push(`שגרה ${r.title}: ${routine.status} → ${r.status ?? 'active'}`);
+      await api('PATCH', `/routines/${routine.id}`, { description: r.description, assigneeAgentId: ids.agents[r.assignee], status: r.status ?? 'active' });
     }
     ids.routines[r.key] = routine.id;
   }

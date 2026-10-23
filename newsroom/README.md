@@ -7,7 +7,9 @@
 2. כותבים `/newsroom` — נפתחת חלונית "חדר חדשות" ליד הצ'אט.
 3. אם השרת כבוי, בחלונית כתוב "השרת כבוי": כותבים `/newsroom start`.
 
-בפרויקט אחר אין `/newsroom` ואין חלונית — המוד יושב ב-`.claude/skills/newsroom/` של הפרויקט הזה בלבד.
+בפרויקט אחר אין `/newsroom` ואין חלונית. המוד יושב ב-`newsroom/mod/` ומותקן בהיקף פרויקט: ההתקנה רשומה רק ב-`.claude/settings.json` של התיקייה הזו (`enabledPlugins` ו-`extraKnownMarketplaces`). בפרויקט אחר הוא מופיע ב-`claude plugin list` כ-disabled.
+
+בפעם הראשונה שפותחים סשן בתיקייה, ייתכן ש-Claude Code ישאל אם לסמוך על ה-marketplace המקומי `pam-newsroom`. מאשרים.
 
 ## מה רואים בחלונית
 - **שרת:** Paperclip פעיל או כבוי (`http://localhost:3100` — אפשר לפתוח גם בדפדפן ללוח המלא).
@@ -56,7 +58,8 @@
 | טיוטות ודוחות בדיקה | `drafts/<תאריך>.json`, `drafts/<תאריך>.check.md` |
 | חיפוש השם | `naming/BRIEF.md`, `naming/candidates.md`, הסבב הראשון ב-`naming/round-1.md` |
 | נתוני Paperclip (לא ב-git) | `.paperclip/` |
-| המוד | `../.claude/skills/newsroom/` |
+| המוד | `mod/` (שינוי בקוד שלו: `/reload-plugins` בסשן) |
+| מחקר מתחרים | `research/competitors-2026-10.md` |
 | גיליונות שפורסמו | `../data/issues/` |
 
 ## לשנות משהו

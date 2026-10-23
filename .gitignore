@@ -4,3 +4,4 @@ node_modules/
 out/
 next-env.d.ts
 newsroom/.paperclip/
+newsroom/drafts/video-candidates.json
