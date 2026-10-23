@@ -2,20 +2,28 @@
   "updated": "2026-10-23",
   "videos": [
     {
-      "id": "Y3zb4o47yqA",
-      "title": "Unitree Introducing: H2-X Kung Fu Legend Guardian",
-      "channel": "Unitree",
-      "published": "2026-10-22",
-      "note_he": "סרטון ההשקה של Unitree להומנואיד H2-X.",
-      "note_en": "Unitree's launch video for the H2-X humanoid."
-    },
-    {
       "id": "AoFwpf43wK0",
       "title": "Figure All Hands 2026",
       "channel": "Figure",
       "published": "2026-10-22",
       "note_he": "מפגש החברה השנתי של Figure.",
       "note_en": "Figure's 2026 all-hands event."
+    },
+    {
+      "id": "Y3zb4o47yqA",
+      "title": "Unitree Introducing: H2-X Kung Fu Legend Guardian",
+      "channel": "Unitree",
+      "published": "2026-10-21",
+      "note_he": "סרטון ההשקה של Unitree להומנואיד H2-X.",
+      "note_en": "Unitree's launch video for the H2-X humanoid."
+    },
+    {
+      "id": "VvJai6HGfyE",
+      "title": "From Prompt to Walking Robot With NVIDIA RTX Spark",
+      "channel": "NVIDIA",
+      "published": "2026-10-21",
+      "note_he": "NVIDIA מציגה, לפי הכותרת, מסלול מהנחיה כתובה לרובוט הולך עם RTX Spark.",
+      "note_en": "NVIDIA, per the title, shows a path from a text prompt to a walking robot with RTX Spark."
     },
     {
       "id": "GQHx67tzVCo",

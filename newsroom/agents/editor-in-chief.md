@@ -20,6 +20,9 @@ Read `newsroom/agents/_shared.md` first. You report to Lior, the owner.
 2. If the Reporter reports "no update": sub-task for the Publisher to refresh the market data only ("Market <date> <edition>"), then close.
 3. Otherwise run the same check → publish chain as the morning, for the new items only.
 
+## Before you decide a sub-task has not started
+Read its comments and look for its output file in `newsroom/drafts/` first. A sub-task that still shows `todo` or `in_review` but has an agent's "Draft ready" / "Check complete" comment and its output file is finished: set it to `done`, then continue the flow (open the next sub-task). Never wait on a status alone, and never end a run with "nothing to do" while the flow's next step is yours.
+
 ## Weekly (Fridays)
 - Read the week's check reports. If the same kind of mistake repeats, propose a concrete change to the relevant role file as a comment for Lior; do not edit role files yourself.
 - In Friday's morning issue, make sure there is a "number of the week" item (a single figure with its source, chosen by the Reporter and verified by the Fact-checker).

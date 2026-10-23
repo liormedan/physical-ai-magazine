@@ -40,6 +40,67 @@
       "summary_en": "The company presented a robotics architecture with a phased rollout: from navigation and front-desk work, through mobile manipulation, to humanoid field operations. Details come from the company's press release.",
       "source_name": "PR Newswire",
       "source_url": "https://prnewswire.com/news-releases/yyforce-unveils-workforce-os-robotics-architecture-powered-by-nvidia-physical-ai-302915031.html"
+    },
+    {
+      "category": "models",
+      "edition": "evening",
+      "title_he": "Dream Labs גייסה 90 מיליון דולר ופתחה ממשק ציבורי להפעלת רובוטים",
+      "title_en": "Dream Labs raises $90M and opens a public API for driving robots",
+      "summary_he": "Dream Labs הודיעה על סבב זרע של 90 מיליון דולר בהובלת B Capital ו-Kindred Ventures, ובמקביל פתחה את Dream API, שמקבל וידאו ממצלמת הרובוט והוראה באנגלית פשוטה ומחזיר פקודות מנוע. לפי החברה, המודל Dream-1 אומן על וידאו של אנשים שמבצעים מטלות יומיומיות, עובד בין חומרה של יצרנים שונים ויכול להפעיל גם רובוטים בעלי תפסן שלא ראה קודם, בלי נתונים נוספים. כרגע מדובר במטלות שולחן כמו הרמה, הנחה וקיפול כביסה; המקור אינו כולל שיעורי הצלחה או מדדים.",
+      "summary_en": "Dream Labs announced a $90 million seed round led by B Capital and Kindred Ventures, and at the same time opened Dream API, which takes video from a robot's camera plus a plain-English instruction and returns motor commands. The company says its Dream-1 model was trained on video of people doing everyday tasks, works across different manufacturers' hardware and can drive gripper-equipped robots it has not seen before without additional data. For now the tasks are tabletop work such as picking, placing and laundry folding; the source includes no success rates or benchmarks.",
+      "why_he": "אם הטענה תעמוד במבחן עצמאי, מודל שמופעל דרך ממשק ציבורי על חומרה של יצרנים שונים משנה את מקום הערך מהגוף של הרובוט אל שכבת התוכנה; בינתיים זו טענה של החברה בלבד, בלי נתוני ביצועים.",
+      "why_en": "If the claim survives independent testing, a model served through a public API across different makers' hardware shifts value from the robot body to the software layer; for now it is the company's claim alone, with no performance data.",
+      "source_name": "The Robot Report",
+      "source_url": "https://www.therobotreport.com/dream-labs-raises-90m-and-launches-dream-api/"
+    },
+    {
+      "category": "humanoids",
+      "edition": "evening",
+      "title_he": "Agility Robotics: NVIDIA תהיה ספקית המחשוב הבלעדית ב-Digit 5",
+      "title_en": "Agility Robotics: NVIDIA to be exclusive onboard compute supplier for Digit 5",
+      "summary_he": "בהודעה שהוגשה במסגרת המיזוג עם Churchill Capital Corp XI אמרה Agility Robotics שהמחשוב שעל גוף ההומנואיד Digit 5 יתבסס על מודולי NVIDIA IGX Thor, ו-NVIDIA תהיה הספקית הבלעדית שלו בגרסת הזמינות הכללית. החברה משלבת את IGX Thor ומודלי Halos במערכת הזיהוי הבטוח של אנשים ותשתתף במעבדת הבדיקות של NVIDIA לפני אישור צד שלישי. גישה מוקדמת צפויה במחצית הראשונה של 2027, והזמינות תגדל בשישה עד תשעה החודשים שאחריה; המקור לא מציין פריסה בתשלום של Digit 5. המיזוג צפוי להיסגר ברבעון הרביעי של 2026, תחת הסימול AGLT ב-Nasdaq.",
+      "summary_en": "In a release filed in connection with its merger with Churchill Capital Corp XI, Agility Robotics said the Digit 5 humanoid's onboard compute will standardise on NVIDIA IGX Thor modules, with NVIDIA the exclusive supplier in the general-availability version. The company is integrating IGX Thor and Halos models into its safe human-detection system and will join NVIDIA's inspection lab ahead of third-party certification. Early access is expected in the first half of 2027, with availability growing over the following six to nine months; the source does not describe any paid Digit 5 deployment. The merger is expected to close in Q4 2026, trading on Nasdaq as AGLT.",
+      "why_he": "ספק מחשוב בלעדי הוא תלות עסקית משמעותית עבור חברה שעומדת להפוך לציבורית, וגם הצהרה על כיוון בטיחותי; שני הדברים רלוונטיים למשקיעים שבוחנים את AGLT.",
+      "why_en": "An exclusive compute supplier is a meaningful commercial dependency for a company about to go public, and also a statement on its safety path; both matter to investors weighing AGLT.",
+      "source_name": "Agility Robotics (SEC Form 425)",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0002074973/000121390026111719/ea0309402-425_churchill11.htm"
+    },
+    {
+      "category": "hardware",
+      "edition": "evening",
+      "title_he": "Robotiq משיקה את 2FC: תפסן עם חיישני מגע ועיבוד מקומי",
+      "title_en": "Robotiq launches the 2FC: a gripper with tactile sensing and local processing",
+      "summary_he": "Robotiq הציגה את 2FC, תפסן מסתגל שמוסיף לסדרת 2F חיישני מגע ויחידת AI. לפי החברה הוא מסנכרן לחץ, רעידות, כוח, מיקום וזרם ברמת המילישנייה, ומריץ מקומית זיהוי החלקה והערכת תנוחת פריט. הוא מדורג ל-2 מיליון מחזורים, במהלך של 85 או 140 מ\"מ; הזמנות מוקדמות פתוחות והמשלוחים מתוכננים לרבעון הראשון של 2027, ובעלי 2F קיימים יוכלו לשדרג.",
+      "summary_en": "Robotiq introduced the 2FC, an adaptive gripper that adds tactile sensors and an AI unit to its 2F line. The company says it synchronises pressure, vibration, force, position and current at millisecond level and runs slip detection and object-pose estimation locally. It is rated for 2 million cycles, in 85 mm or 140 mm strokes; pre-orders are open with shipping planned for Q1 2027, and existing 2F owners can upgrade.",
+      "why_he": "נתיב שדרוג לבסיס מותקן גדול (לפי המקור, יותר מ-30,000 תפסני 2F בשטח) מקל על הכנסת חישת מגע לתעשייה, אך אין עדיין נתוני ביצועים עצמאיים.",
+      "why_en": "An upgrade path for a large installed base (the source cites over 30,000 2F grippers in the field) lowers the barrier to bringing touch sensing into industry, though there is no independent performance data yet.",
+      "source_name": "Robotics & Automation News",
+      "source_url": "https://roboticsandautomationnews.com/2026/10/22/robotiq-launches-the-2fc-physical-ai-gripper/106191/"
+    },
+    {
+      "category": "industry",
+      "edition": "evening",
+      "title_he": "Enact Intelligence השוויצרית גייסה 30 מיליון דולר לרובוטים שמרגישים כוח ומגע",
+      "title_en": "Swiss startup Enact Intelligence raises $30M for robots that sense force and touch",
+      "summary_he": "Enact Intelligence הודיעה על גיוס פרה-סיד של 30 מיליון דולר, בין המשקיעים Yann LeCun, Arthur Mensch מ-Mistral AI ו-Thomas Wolf מ-Hugging Face. החברה מפתחת מודלים לשליטה ברובוטים שאמורים להתאים לצורות גוף שונות, וכן מפעילים (actuators) שלדבריה מרגישים כוח ומגע. הדיווח אינו מזכיר לקוחות, פיילוטים או רובוטים בשטח, והחברה לא הסבירה איך החישה עובדת.",
+      "summary_en": "Enact Intelligence announced a $30 million pre-seed round, with investors including Yann LeCun, Mistral AI's Arthur Mensch and Hugging Face's Thomas Wolf. The company is building models to control robots across different body designs, plus actuators it says sense force and touch. The report mentions no customers, pilots or deployed robots, and the company did not explain how the sensing works.",
+      "why_he": "סבב פרה-סיד גדול של חברה שהמקור לא מתאר לה מוצר בשטח מעיד על התמחור שהשוק נותן כיום לצוותים בתחום הבינה הגופנית, ועל עניין בחישת כוח כשכבה משלימה למודל.",
+      "why_en": "A large pre-seed for a company whose source describes no product in the field shows how the market currently prices physical-AI teams, and the interest in force sensing as a layer complementing the model.",
+      "source_name": "SiliconANGLE",
+      "source_url": "https://siliconangle.com/2026/10/22/robotics-startup-enact-intelligence-nabs-30m-funding-round"
+    },
+    {
+      "category": "autonomy",
+      "edition": "evening",
+      "title_he": "מספר השבוע: 3,112,541 מייל אוטונומיים של הרובוטקסי של Tesla",
+      "title_en": "Number of the week: 3,112,541 autonomous miles for Tesla's robotaxi",
+      "summary_he": "בדוח הבטיחות של שירות הרובוטקסי מדווחת Tesla על 3,112,541 מייל אוטונומיים בין 22 בינואר ל-18 באוקטובר 2026, מהם יותר מ-2.1 מיליון באוסטין וכ-608 אלף בדאלאס. לפי החברה לא היו פצועים מפגיעת רובוטקסי, פתיחות כריות אוויר או פגיעות בהולכי רגל ורוכבי אופניים. היא מעריכה על סמך נתוני משטרת טקסס שנהגים אנושיים היו מעורבים בכ-9.1 תאונות עם נפגעים ב-2.95 מיליון מייל באוסטין, דאלאס ויוסטון, ומציינת בעצמה שלמדדי הפציעות וההשוואה יש מגבלות. מדובר בנתונים שדיווחה החברה, בלי אימות עצמאי.",
+      "summary_en": "In its Robotaxi Safety Report, Tesla reports 3,112,541 autonomous miles between January 22 and October 18, 2026, including more than 2.1 million in Austin and about 608,000 in Dallas. The company says there were no people injured by a robotaxi, no airbag deployments and no pedestrians or cyclists hit. It estimates from Texas police data that human drivers would have been involved in about 9.1 injury collisions over 2.95 million miles in Austin, Dallas and Houston, and itself notes limitations in the injury metric and the benchmark. These are company-reported figures with no independent verification.",
+      "why_he": "זו התמונה המפורטת ביותר עד כה ש-Tesla פרסמה על הרובוטקסי, אך ההשוואה לנהגים אנושיים נבנתה על ידי החברה עצמה, ולכן היא אינדיקציה ולא הוכחה לבטיחות.",
+      "why_en": "This is the most detailed picture Tesla has published so far of its robotaxi, but the human comparison was built by the company itself, so it is an indication rather than proof of safety.",
+      "source_name": "Drive Tesla Canada",
+      "source_url": "https://driveteslacanada.ca/robotaxi/tesla-robotaxi-safety-report-zero-injuries/"
     }
-  ]
+  ],
+  "updated": "evening"
 }

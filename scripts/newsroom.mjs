@@ -83,11 +83,11 @@ async function start() {
     pid = child.pid;
   }
   writeFileSync(pidFile, String(pid));
-  for (let i = 0; i < 90; i++) {
+  for (let i = 0; i < 180; i++) { // up to 6 min: after a hard stop Postgres replays its log first
     if (await isUp()) return `השרת עלה (pid ${pid})`;
     await new Promise((r) => setTimeout(r, 2000));
   }
-  throw new Error(`the server did not answer within 3 minutes; see ${logFile}`);
+  throw new Error(`the server did not answer within 6 minutes; see ${logFile}`);
 }
 
 function killTree(pid) {
@@ -102,6 +102,16 @@ async function stop() {
   const pid = existsSync(pidFile) ? Number(readFileSync(pidFile, 'utf8')) : null;
   if (pid) killTree(pid);
   rmSync(pidFile, { force: true });
+  if (isWin) {
+    // The embedded Postgres can outlive the server's process tree. A surviving
+    // one makes the next start remove its "stale" lock and hang, so end it too
+    // (Postgres recovers from its WAL on the next start).
+    try {
+      execFileSync('powershell.exe', ['-NoProfile', '-NonInteractive', '-Command',
+        "Get-CimInstance Win32_Process -Filter \"Name='postgres.exe'\" | Where-Object { $_.CommandLine -match 'paperclip' } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force }"],
+      { stdio: 'ignore', windowsHide: true });
+    } catch { /* none running */ }
+  }
   if (await isUp() && isWin) {
     // started some other way (onboard, a terminal): stop whatever listens on 3100
     const out = execFileSync('netstat', ['-ano', '-p', 'TCP'], { encoding: 'utf8' });

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23T00:27:42.781Z",
+  "updated": "2026-10-23T15:08:02.909Z",
   "source": {
     "name": "Yahoo Finance",
     "url": "https://finance.yahoo.com"
@@ -8,8 +8,8 @@
     "name_he": "מדד הבינה הגופנית",
     "name_en": "Physical AI index",
     "method": "equal-weighted average of the companies, funds excluded",
-    "changePct": -2.99,
-    "change1mPct": -9.53
+    "changePct": -0.53,
+    "change1mPct": -8.39
   },
   "tickers": [
     {
@@ -19,11 +19,11 @@
         "NVIDIA"
       ],
       "group": "chips",
-      "price": 212.21,
+      "price": 213.05,
       "currency": "USD",
-      "changePct": -1.97,
-      "change1mPct": -5.9,
-      "asOf": "2026-10-22T20:00:00.000Z"
+      "changePct": 0.4,
+      "change1mPct": -5.53,
+      "asOf": "2026-10-23T15:08:01.000Z"
     },
     {
       "symbol": "TSLA",
@@ -33,11 +33,11 @@
         "Optimus"
       ],
       "group": "humanoids",
-      "price": 374.58,
+      "price": 376.08,
       "currency": "USD",
-      "changePct": 0.23,
-      "change1mPct": -1.46,
-      "asOf": "2026-10-22T20:00:00.000Z"
+      "changePct": 0.4,
+      "change1mPct": -1.06,
+      "asOf": "2026-10-23T15:08:01.000Z"
     },
     {
       "symbol": "MBLY",
@@ -47,11 +47,11 @@
       ],
       "group": "autonomy",
       "israel": true,
-      "price": 6.95,
+      "price": 6.51,
       "currency": "USD",
-      "changePct": -4.79,
-      "change1mPct": -8.67,
-      "asOf": "2026-10-22T20:00:01.000Z"
+      "changePct": -6.4,
+      "change1mPct": -14.52,
+      "asOf": "2026-10-23T15:08:01.000Z"
     },
     {
       "symbol": "ABBN.SW",
@@ -60,11 +60,11 @@
         "ABB"
       ],
       "group": "industrial",
-      "price": 68.92,
+      "price": 67.84,
       "currency": "CHF",
-      "changePct": -4.06,
-      "change1mPct": -17.06,
-      "asOf": "2026-10-22T15:30:57.000Z"
+      "changePct": -1.57,
+      "change1mPct": -17.69,
+      "asOf": "2026-10-23T14:52:55.000Z"
     },
     {
       "symbol": "6954.T",
@@ -74,11 +74,11 @@
         "FANUC"
       ],
       "group": "industrial",
-      "price": 5405,
+      "price": 5587,
       "currency": "JPY",
-      "changePct": -3.89,
-      "change1mPct": -10.23,
-      "asOf": "2026-10-23T00:12:40.000Z"
+      "changePct": -4.05,
+      "change1mPct": -7.21,
+      "asOf": "2026-10-23T06:30:00.000Z"
     },
     {
       "symbol": "6506.T",
@@ -87,11 +87,11 @@
         "Yaskawa"
       ],
       "group": "industrial",
-      "price": 3829,
+      "price": 4022,
       "currency": "JPY",
-      "changePct": -5.06,
-      "change1mPct": -15.04,
-      "asOf": "2026-10-23T00:12:41.000Z"
+      "changePct": -4.33,
+      "change1mPct": -10.76,
+      "asOf": "2026-10-23T06:30:00.000Z"
     },
     {
       "symbol": "TER",
@@ -101,11 +101,11 @@
         "Universal Robots"
       ],
       "group": "industrial",
-      "price": 308.75,
+      "price": 313.8,
       "currency": "USD",
-      "changePct": -8.27,
-      "change1mPct": -20.66,
-      "asOf": "2026-10-22T20:00:00.000Z"
+      "changePct": 1.64,
+      "change1mPct": -19.36,
+      "asOf": "2026-10-23T15:07:55.000Z"
     },
     {
       "symbol": "ISRG",
@@ -114,11 +114,11 @@
         "Intuitive"
       ],
       "group": "medical",
-      "price": 443.85,
+      "price": 454.57,
       "currency": "USD",
-      "changePct": 1.34,
-      "change1mPct": 11.44,
-      "asOf": "2026-10-22T20:00:01.000Z"
+      "changePct": 2.41,
+      "change1mPct": 14.13,
+      "asOf": "2026-10-23T15:08:01.000Z"
     },
     {
       "symbol": "SYM",
@@ -127,11 +127,11 @@
         "Symbotic"
       ],
       "group": "logistics",
-      "price": 40.36,
+      "price": 40.13,
       "currency": "USD",
-      "changePct": 1.69,
-      "change1mPct": -7.62,
-      "asOf": "2026-10-22T20:00:00.000Z"
+      "changePct": -0.57,
+      "change1mPct": -8.15,
+      "asOf": "2026-10-23T15:07:50.000Z"
     },
     {
       "symbol": "9880.HK",
@@ -141,33 +141,33 @@
         "UBTECH"
       ],
       "group": "humanoids",
-      "price": 63.9,
+      "price": 68.2,
       "currency": "HKD",
-      "changePct": -5.12,
-      "change1mPct": -20.13,
-      "asOf": "2026-10-22T08:08:34.000Z"
+      "changePct": 6.73,
+      "change1mPct": -13.73,
+      "asOf": "2026-10-23T08:08:08.000Z"
     },
     {
       "symbol": "BOTZ",
       "name": "Global X Robotics & AI ETF",
       "match": [],
       "group": "fund",
-      "price": 32.68,
+      "price": 33.01,
       "currency": "USD",
-      "changePct": -2.71,
-      "change1mPct": -7.4,
-      "asOf": "2026-10-22T20:00:01.000Z"
+      "changePct": 1,
+      "change1mPct": -6.47,
+      "asOf": "2026-10-23T15:06:28.000Z"
     },
     {
       "symbol": "ROBO",
       "name": "ROBO Global Robotics & Automation ETF",
       "match": [],
       "group": "fund",
-      "price": 74.84,
+      "price": 74.83,
       "currency": "USD",
-      "changePct": -2.43,
-      "change1mPct": -6.69,
-      "asOf": "2026-10-22T20:00:00.000Z"
+      "changePct": -0.01,
+      "change1mPct": -6.7,
+      "asOf": "2026-10-23T15:01:08.000Z"
     }
   ],
   "misses": []

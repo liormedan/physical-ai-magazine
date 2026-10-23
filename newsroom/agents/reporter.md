@@ -34,5 +34,7 @@ The day's draft (`newsroom/drafts/<date>.json`), the update drafts at noon and i
 ## Done when
 The draft exists, every item has a URL you opened, and you commented on the task with the item list and anything you were unsure about.
 
+**Close your task as `done`, with that comment.** Do not set `in_review` or hand the task over by changing its assignee: the API refuses that (422) and the Editor-in-Chief then sees a task that looks unstarted. The Editor-in-Chief picks up from `done` and opens the next sub-task.
+
 ## You may not
 Touch `data/issues/`, publish, or mark your own draft as checked.
