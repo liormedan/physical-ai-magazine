@@ -77,14 +77,14 @@
       "cron": "0 7 * * *",
       "assignee": "editor",
       "description": "Open today's issue and run it through Reporter -> Fact-checker -> Language editor & Publisher, per newsroom/agents/editor-in-chief.md.",
-      "status": "active"
+      "status": "paused"
     },
     {
       "key": "noon-update",
       "title": "עדכון צהריים",
       "cron": "0 13 * * *",
       "assignee": "editor",
-      "status": "active",
+      "status": "paused",
       "description": "Noon update of today's issue per newsroom/agents/editor-in-chief.md (new items only; market refresh always)."
     },
     {
@@ -92,7 +92,7 @@
       "title": "עדכון ערב",
       "cron": "0 19 * * *",
       "assignee": "editor",
-      "status": "active",
+      "status": "paused",
       "description": "Evening update of today's issue per newsroom/agents/editor-in-chief.md (new items only; market refresh always)."
     },
     {
@@ -101,7 +101,7 @@
       "cron": "0 10 * * 0",
       "assignee": "brand",
       "description": "Propose 3 new name candidates per newsroom/agents/brand-designer.md and ask Lior to decide.",
-      "status": "active"
+      "status": "paused"
     },
     {
       "key": "weekly-review",
@@ -109,7 +109,7 @@
       "cron": "0 12 * * 5",
       "assignee": "editor",
       "description": "Weekly review per newsroom/agents/editor-in-chief.md.",
-      "status": "active"
+      "status": "paused"
     }
   ]
 }
