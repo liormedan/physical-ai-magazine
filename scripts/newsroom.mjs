@@ -144,6 +144,7 @@ async function setup() {
     // off Lior's personal hooks, which otherwise open a console window per tool call
     const adapterConfig = {
       cwd: config.defaults.cwd, maxTurnsPerRun: 150, timeoutSec: 3600, engine: 'cli',
+      ...((a.model ?? config.defaults.model) ? { model: a.model ?? config.defaults.model } : {}),
       // relative to cwd: Paperclip quotes args itself, and an absolute path with
       // spaces ("pysical ai magazine") reaches claude broken
       extraArgs: ['--settings', config.defaults.agentSettings ?? 'newsroom/agent-settings.json'],

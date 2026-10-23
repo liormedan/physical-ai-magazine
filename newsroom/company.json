@@ -1,5 +1,5 @@
 {
-  "$comment": "Newsroom team definition. scripts/newsroom-setup.mjs applies it to the project's Paperclip instance; run it again after any change (/newsroom setup). Budgets are USD per month and start conservative; adjust after a week of measured spend. Routine status: paused until Lior approves switching from the legacy single-agent scheduled task (two issues would go out otherwise).",
+  "$comment": "Newsroom team definition. scripts/newsroom-setup.mjs applies it to the project's Paperclip instance; run it again after any change (/newsroom setup). Budgets are USD per month and start conservative; adjust after a week of measured spend. Switched from the legacy single-agent scheduled task on 2026-10-23 (Lior approved); that task is paused.",
   "company": {
     "name": "Physical AI Magazine",
     "goal": "Publish an accurate bilingual (Hebrew + English) Physical AI issue every day by 07:30, update it at 13:00 and 19:00, and find the magazine's name.",
@@ -7,6 +7,7 @@
   },
   "defaults": {
     "adapter": "claude_local",
+    "model": "claude-sonnet-5-5",
     "cwd": "C:\\pam",
     "sharedInstructions": "newsroom/agents/_shared.md",
     "agentSettings": "newsroom/agent-settings.json",
@@ -76,14 +77,14 @@
       "cron": "0 7 * * *",
       "assignee": "editor",
       "description": "Open today's issue and run it through Reporter -> Fact-checker -> Language editor & Publisher, per newsroom/agents/editor-in-chief.md.",
-      "status": "paused"
+      "status": "active"
     },
     {
       "key": "noon-update",
       "title": "עדכון צהריים",
       "cron": "0 13 * * *",
       "assignee": "editor",
-      "status": "paused",
+      "status": "active",
       "description": "Noon update of today's issue per newsroom/agents/editor-in-chief.md (new items only; market refresh always)."
     },
     {
@@ -91,7 +92,7 @@
       "title": "עדכון ערב",
       "cron": "0 19 * * *",
       "assignee": "editor",
-      "status": "paused",
+      "status": "active",
       "description": "Evening update of today's issue per newsroom/agents/editor-in-chief.md (new items only; market refresh always)."
     },
     {
