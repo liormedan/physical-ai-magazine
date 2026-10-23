@@ -14,7 +14,7 @@ if (out('git status --porcelain') === '') {
   const issue = out('git status --porcelain data/issues').split('\n').map((l) => l.slice(3)).filter(Boolean).pop();
   const msg = issue ? `issue: ${issue.replace(/^data\/issues\//, '').replace(/\.json$/, '')}` : 'update site';
   run('git add -A');
-  run(`git commit -q -m "${msg}" -m "Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>"`);
+  run(`git commit -q -m "${msg}" -m "Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>"`);
 }
 run('git push origin main');
 console.log('pushed; Vercel deploys from main -> https://physical-ai-magazine.vercel.app');
