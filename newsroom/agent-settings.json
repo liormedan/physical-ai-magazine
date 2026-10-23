@@ -1,0 +1,4 @@
+{
+  "$comment": "Claude Code settings for the newsroom agents only, passed with --settings by the Paperclip adapter (scripts/newsroom.mjs setup). Lior's personal hooks (~/.claude/hooks: one-instance, typecheck) are for his own sessions; run by agents they spawn a visible node console window per tool call. The deny rules in .claude/settings.json still apply.",
+  "disableAllHooks": true
+}

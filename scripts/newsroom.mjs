@@ -60,7 +60,11 @@ async function start() {
   // handle its auth; drop them so agents use the CLI's own sign-in.
   const env = Object.fromEntries(Object.entries(process.env).filter(([k]) => !/^(CLAUDE|ANTHROPIC)/.test(k)));
   Object.assign(env, { PAPERCLIP_TELEMETRY_DISABLED: '1', DO_NOT_TRACK: '1' });
-  const cmd = `npx -y -p node@24 -p paperclipai@latest paperclipai run --data-dir "${dataDir}"`;
+  // Paperclip runs from the agents' cwd (on Windows the C:\pam junction): its
+  // cli engine breaks absolute paths with spaces, including those of files it
+  // writes under its own data dir
+  const home = existsSync(config.defaults.cwd) ? config.defaults.cwd : root;
+  const cmd = `npx -y -p node@24 -p paperclipai@latest paperclipai run --data-dir "${join(home, 'newsroom', '.paperclip')}"`;
   let pid;
   if (isWin) {
     // A process that outlives this script, the mod and the Claude Code session.
@@ -69,7 +73,7 @@ async function start() {
     // visible console window. Start-Process -WindowStyle Hidden gives the server
     // one hidden console that the whole tree inherits.
     const launcher = join(dataDir, 'server.cmd');
-    writeFileSync(launcher, `@echo off\r\ncd /d "${root}"\r\n${cmd} >> "${logFile}" 2>&1\r\n`);
+    writeFileSync(launcher, `@echo off\r\ncd /d "${home}"\r\n${cmd} >> "${logFile}" 2>&1\r\n`);
     const ps = `(Start-Process -FilePath cmd.exe -ArgumentList '/d','/c','"${launcher}"' -WindowStyle Hidden -PassThru).Id`;
     pid = execFileSync('powershell.exe', ['-NoProfile', '-NonInteractive', '-Command', ps], { encoding: 'utf8', env, windowsHide: true }).trim();
   } else {
@@ -136,7 +140,14 @@ async function setup() {
   const existing = list(await api('GET', `/companies/${company.id}/agents`));
   // managers first so reportsTo can point at an id
   for (const a of [...config.agents].sort((x, y) => (x.reportsTo === null ? -1 : 0) - (y.reportsTo === null ? -1 : 0))) {
-    const adapterConfig = { cwd: config.defaults.cwd, maxTurnsPerRun: 150, timeoutSec: 3600 };
+    // cli engine so extraArgs reach `claude`; the agents' own settings file turns
+    // off Lior's personal hooks, which otherwise open a console window per tool call
+    const adapterConfig = {
+      cwd: config.defaults.cwd, maxTurnsPerRun: 150, timeoutSec: 3600, engine: 'cli',
+      // relative to cwd: Paperclip quotes args itself, and an absolute path with
+      // spaces ("pysical ai magazine") reaches claude broken
+      extraArgs: ['--settings', config.defaults.agentSettings ?? 'newsroom/agent-settings.json'],
+    };
     const body = {
       name: a.name, title: a.title, role: ROLE[a.key] ?? 'general', icon: ICON[a.key] ?? 'bot',
       reportsTo: a.reportsTo ? ids.agents[a.reportsTo] : undefined,
@@ -152,7 +163,8 @@ async function setup() {
       await api('PATCH', `/agents/${agent.id}/budgets`, { budgetMonthlyCents: cents(a.monthlyBudgetUsd) });
     }
     ids.agents[a.key] = agent.id;
-    await api('PATCH', `/agents/${agent.id}/instructions-path`, { path: join(root, a.instructions) });
+    // through the agents' cwd (a no-space junction on Windows), like extraArgs above
+    await api('PATCH', `/agents/${agent.id}/instructions-path`, { path: join(config.defaults.cwd, a.instructions) });
     const current = (await api('GET', `/agents/${agent.id}`)).status;
     if (a.status === 'paused' && current !== 'paused') await api('POST', `/agents/${agent.id}/pause`, {});
     if (a.status === 'active' && current === 'paused') await api('POST', `/agents/${agent.id}/resume`, {});

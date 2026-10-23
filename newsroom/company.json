@@ -7,8 +7,10 @@
   },
   "defaults": {
     "adapter": "claude_local",
-    "cwd": "C:\\pysical ai magazine",
-    "sharedInstructions": "newsroom/agents/_shared.md"
+    "cwd": "C:\\pam",
+    "sharedInstructions": "newsroom/agents/_shared.md",
+    "agentSettings": "newsroom/agent-settings.json",
+    "$cwd": "Agents work through C:\\pam, a directory junction to this folder (mklink /J C:\\pam \"C:\\pysical ai magazine\"): Paperclip's cli engine breaks absolute paths that contain spaces on Windows."
   },
   "agents": [
     {
