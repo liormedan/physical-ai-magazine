@@ -11,7 +11,8 @@ run('npm run build');
 if (out('git status --porcelain') === '') {
   console.log('nothing to publish: working tree clean');
 } else {
-  const issue = out('git status --porcelain data/issues').split('\n').map((l) => l.slice(3)).filter(Boolean).pop();
+  // out() trims, which eats the first line's leading status space; take the path after the status code instead
+  const issue = out('git status --porcelain data/issues').split('\n').map((l) => l.replace(/^\s*\S+\s+/, '')).filter(Boolean).pop();
   const msg = issue ? `issue: ${issue.replace(/^data\/issues\//, '').replace(/\.json$/, '')}` : 'update site';
   run('git add -A');
   run(`git commit -q -m "${msg}" -m "Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>"`);

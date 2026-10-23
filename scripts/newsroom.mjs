@@ -210,6 +210,14 @@ async function issue() {
   await api('POST', `/routines/${id}/run`, { source: 'manual', idempotencyKey: `daily-issue-${today()}` });
   return 'גיליון היום הופעל';
 }
+// Nudge an agent that went idle with work waiting (a handoff that did not wake it).
+async function wake(key = 'editor') {
+  const id = loadIds().agents[key];
+  if (!id) throw new Error(`סוכן לא מוכר: ${key}. אפשר: ${config.agents.map((a) => a.key).join(', ')}`);
+  if ((await api('GET', `/agents/${id}`)).status === 'error') await api('POST', `/agents/${id}/clear-error`, {});
+  await api('POST', `/agents/${id}/wakeup`, { reason: 'Manual nudge from Lior: check your open tasks (read their comments and the output files in newsroom/drafts/) and continue the flow in your role file.' });
+  return `${config.agents.find((a) => a.key === key).title}: הוער`;
+}
 async function decide(kind, id) {
   if (!id) throw new Error(`usage: ${kind} <id>`);
   await api('POST', `/approvals/${id}/${kind}`, { decisionNote: 'via newsroom mod' });
@@ -297,12 +305,13 @@ try {
   else if (cmd === 'status') { const s = await status(); out = arg === '--json' ? JSON.stringify(s) : printStatus(s); }
   else if (cmd === 'setup') out = await setup();
   else if (cmd === 'issue') out = await issue();
+  else if (cmd === 'wake') out = await wake(arg);
   else if (cmd === 'approve' || cmd === 'reject') out = await decide(cmd, arg);
   else if (cmd === 'pause' || cmd === 'resume') out = await pause(cmd, arg);
   else if (cmd === 'names') {
     const n = names();
     out = `בריף: newsroom/naming/BRIEF.md\n${n.lastRound ? `סבב אחרון: ${n.lastRound} — ${n.candidates.join(' · ')}` : 'עוד אין סבב חדש; מעצב ומותג מציע בימי ראשון ב-10:00'}`;
-  } else { console.error('usage: node scripts/newsroom.mjs start|stop|status [--json]|setup|issue|approve <id>|reject <id>|pause <agent>|resume <agent>|names'); process.exit(2); }
+  } else { console.error('usage: node scripts/newsroom.mjs start|stop|status [--json]|setup|issue|wake [agent]|approve <id>|reject <id>|pause <agent>|resume <agent>|names'); process.exit(2); }
   console.log(out);
 } catch (e) {
   console.error(e.message);
