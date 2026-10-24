@@ -198,6 +198,18 @@ async function setup() {
     ids.routines[r.key] = routine.id;
   }
 
+  // Runs are billed to the subscription, so Paperclip sees them as "unpriced" and, by default, hard-stops
+  // every agent after the first run (observed with 2026.1023.0). Let unpriced usage through.
+  const overview = await api('GET', `/companies/${ids.companyId}/budgets/overview`);
+  for (const p of overview.policies ?? []) {
+    if (p.unpricedUsagePolicy === 'allow') continue;
+    await api('POST', `/companies/${ids.companyId}/budgets/policies`, {
+      scopeType: p.scopeType, scopeId: p.scopeId, metric: p.metric, windowKind: p.windowKind, amount: p.amount,
+      warnPercent: p.warnPercent, hardStopEnabled: p.hardStopEnabled, notifyEnabled: p.notifyEnabled, isActive: true, unpricedUsagePolicy: 'allow',
+    });
+    log.push(`תקציב ${p.scopeName}: שימוש לא מתומחר מותר`);
+  }
+
   saveIds(ids);
   return log.length ? log.join('\n') : 'הכול כבר מעודכן';
 }
