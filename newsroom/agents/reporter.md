@@ -28,7 +28,7 @@ The day's draft (`newsroom/drafts/<date>.json`), the update drafts at noon and i
 ## Video playlist (with the morning edition)
 1. Run `node scripts/videos.mjs` — it writes candidates from the channels in `newsroom/video-channels.json` to `newsroom/drafts/video-candidates.json`.
 2. Keep only videos about Physical AI (robots, humanoids, embodied models, autonomy, robotics hardware). Drop general AI, coding and chemistry videos even from robotics-adjacent channels.
-3. Write `data/videos.json`: `{ "updated": "<date>", "videos": [ { "id", "title", "channel", "published", "note_he", "note_en" } ] }`, newest first, at most 12, keeping older picks that are still under 3 weeks old.
+3. Write `data/videos.json`: `{ "updated": "<date>", "videos": [ { "id", "title", "channel", "published", "note_he", "note_en" } ] }`, this is the site's TV-style watch list: keep **at least 30** videos (at most 60), newest first, mixed across channels. Add the new picks on top and keep older on-topic picks until they are 60 days old. If fewer than 30 remain, run `node scripts/videos.mjs 60` and fill from it. Only Physical AI videos (robots, humanoids, robot models, autonomy, robotics hardware, deployments); no generic AI-model or software tutorials.
 4. `note_*` is one short line based only on the title and the channel's own description. Never describe what happens in a video you have not watched beyond that.
 
 ## Done when

@@ -10,40 +10,16 @@
       "note_en": "Jensen Huang's keynote at GTC Berlin 2026."
     },
     {
-      "id": "AoFwpf43wK0",
-      "title": "Figure All Hands 2026",
-      "channel": "Figure",
-      "published": "2026-10-22",
-      "note_he": "מפגש החברה השנתי של Figure.",
-      "note_en": "Figure's 2026 all-hands event."
-    },
-    {
       "id": "Y3zb4o47yqA",
       "title": "Unitree Introducing: H2-X Kung Fu Legend Guardian",
       "channel": "Unitree",
-      "published": "2026-10-21",
+      "published": "2026-10-22",
       "note_he": "סרטון ההשקה של Unitree להומנואיד H2-X.",
       "note_en": "Unitree's launch video for the H2-X humanoid."
     },
     {
-      "id": "VvJai6HGfyE",
-      "title": "From Prompt to Walking Robot With NVIDIA RTX Spark",
-      "channel": "NVIDIA",
-      "published": "2026-10-21",
-      "note_he": "NVIDIA מציגה, לפי הכותרת, מסלול מהנחיה כתובה לרובוט הולך עם RTX Spark.",
-      "note_en": "NVIDIA, per the title, shows a path from a text prompt to a walking robot with RTX Spark."
-    },
-    {
-      "id": "GQHx67tzVCo",
-      "title": "Unitree Introducing: UniUni Intelligent Swarm Control System",
-      "channel": "Unitree",
-      "published": "2026-10-17",
-      "note_he": "מערכת השליטה של Unitree בנחיל רובוטים.",
-      "note_en": "Unitree's swarm control system for groups of robots."
-    },
-    {
       "id": "dP_i7hRvGpE",
-      "title": "Machine, Assemble, Repair: How We Build Atlas",
+      "title": "Machine, Assemble, Repair: How We Build Atlas | Boston Dynamics",
       "channel": "Boston Dynamics",
       "published": "2026-10-15",
       "note_he": "מאחורי הקלעים של ייצור Atlas ותיקונו.",
@@ -56,6 +32,230 @@
       "published": "2026-10-14",
       "note_he": "Google DeepMind מלמדת הומנואיד משחק זריקה בעזרת Gemini 4 Argon.",
       "note_en": "Google DeepMind teaches a humanoid a throwing game with Gemini 4 Argon."
+    },
+    {
+      "id": "lJpM_2a1zrE",
+      "title": "Helix 2.5 30-Home Generalization",
+      "channel": "Figure",
+      "published": "2026-09-24",
+      "note_he": "Helix 2.5 של Figure נבחן ב-30 בתים.",
+      "note_en": "Figure's Helix 2.5 tested across 30 homes."
+    },
+    {
+      "id": "oyq9BOwK5XI",
+      "title": "Introducing Digit 5",
+      "channel": "Agility Robotics",
+      "published": "2026-09-24",
+      "note_he": "הצגת Digit 5 של Agility Robotics.",
+      "note_en": "Agility Robotics introduces Digit 5."
+    },
+    {
+      "id": "4whgw2gLBS8",
+      "title": "New Hands for Atlas | Boston Dynamics",
+      "channel": "Boston Dynamics",
+      "published": "2026-10-03",
+      "note_he": "ידיים חדשות ל-Atlas של Boston Dynamics.",
+      "note_en": "New hands for Boston Dynamics' Atlas."
+    },
+    {
+      "id": "roUZ7_Rsf5c",
+      "title": "Accelerating Robot Development With AI Agents and NVIDIA Isaac",
+      "channel": "NVIDIA",
+      "published": "2026-10-23",
+      "note_he": "האצת פיתוח רובוטים עם סוכני AI ו-NVIDIA Isaac.",
+      "note_en": "Accelerating robot development with AI agents and NVIDIA Isaac."
+    },
+    {
+      "id": "bYkyz9QwqCw",
+      "title": "The World's Largest-Scale Full-Size Humanoid Robot Real-Time Livestream Performance",
+      "channel": "Unitree",
+      "published": "2026-09-26",
+      "note_he": "שידור חי של הופעה בקנה מידה גדול של הומנואידים בגודל מלא מבית Unitree.",
+      "note_en": "Unitree's large-scale live performance with full-size humanoids."
+    },
+    {
+      "id": "AoFwpf43wK0",
+      "title": "Figure All Hands 2026",
+      "channel": "Figure",
+      "published": "2026-10-23",
+      "note_he": "מפגש החברה השנתי של Figure.",
+      "note_en": "Figure's 2026 all-hands event."
+    },
+    {
+      "id": "LAT2RIKjhTo",
+      "title": "Unitree Introducing: Unitree Dex5-S Dexterous Hand 22 Degrees of Freedom 1:1 Real-Hand Size",
+      "channel": "Unitree",
+      "published": "2026-09-24",
+      "note_he": "יד אומנית Dex5-S של Unitree עם 22 דרגות חופש.",
+      "note_en": "Unitree's Dex5-S dexterous hand with 22 degrees of freedom."
+    },
+    {
+      "id": "CFS_zU1kWQw",
+      "title": "Inside the Robotics Race | Boston Dynamics x Hyundai Motor Group x Bloomberg Media Studios",
+      "channel": "Boston Dynamics",
+      "published": "2026-10-03",
+      "note_he": "מירוץ הרובוטיקה: Boston Dynamics ו-Hyundai Motor Group בראיון ל-Bloomberg.",
+      "note_en": "Inside the robotics race: Boston Dynamics and Hyundai Motor Group with Bloomberg."
+    },
+    {
+      "id": "HYlrzihyL1k",
+      "title": "Agility Foundations: AI Stack",
+      "channel": "Agility Robotics",
+      "published": "2026-09-24",
+      "note_he": "ערימת ה-AI של Agility Robotics, מתוך הסדרה Agility Foundations.",
+      "note_en": "Agility Robotics' AI stack, from the Agility Foundations series."
+    },
+    {
+      "id": "GHySQMMrIa4",
+      "title": "Unitree General-Purpose Humanoid Foundation Model Fully Upgrade Major Open Source",
+      "channel": "Unitree",
+      "published": "2026-09-24",
+      "note_he": "שדרוג מודל היסוד להומנואידים של Unitree ופרסומו כקוד פתוח.",
+      "note_en": "Unitree's upgraded general-purpose humanoid foundation model, released as open source."
+    },
+    {
+      "id": "VvJai6HGfyE",
+      "title": "Robot Development With AI Agents on NVIDIA RTX Spark",
+      "channel": "NVIDIA",
+      "published": "2026-10-22",
+      "note_he": "NVIDIA מציגה, לפי הכותרת, מסלול מהנחיה כתובה לרובוט הולך עם RTX Spark.",
+      "note_en": "NVIDIA, per the title, shows a path from a text prompt to a walking robot with RTX Spark."
+    },
+    {
+      "id": "pfAh5oQDPDM",
+      "title": "F.02 Decomission",
+      "channel": "Figure",
+      "published": "2026-10-03",
+      "note_he": "הוצאה משירות של F.02, הדור הקודם של Figure.",
+      "note_en": "The decommissioning of Figure's F.02."
+    },
+    {
+      "id": "GQHx67tzVCo",
+      "title": "Unitree Introducing: UniUni Intelligent Swarm Control System",
+      "channel": "Unitree",
+      "published": "2026-10-17",
+      "note_he": "מערכת השליטה של Unitree בנחיל רובוטים.",
+      "note_en": "Unitree's swarm control system for groups of robots."
+    },
+    {
+      "id": "Vwrz1hfVeSM",
+      "title": "Why does the Waymo Driver rely on cameras, radar, and lidar? The answer comes down to sensor fusion.",
+      "channel": "Waymo",
+      "published": "2026-09-26",
+      "note_he": "למה נהג Waymo מסתמך על מצלמות, מכ\"ם וליידר.",
+      "note_en": "Why the Waymo Driver relies on cameras, radar and lidar."
+    },
+    {
+      "id": "QbuIxdvViv4",
+      "title": "Scaling Compute",
+      "channel": "Figure",
+      "published": "2026-09-24",
+      "note_he": "Scaling Compute: קנה המידה של כוח החישוב אצל Figure.",
+      "note_en": "Scaling Compute: how Figure scales its compute."
+    },
+    {
+      "id": "qkIJELDgULA",
+      "title": "Unitree Breakthrough: The World’s First Fully Autonomous Humanoid Robot Combat",
+      "channel": "Unitree",
+      "published": "2026-09-24",
+      "note_he": "הומנואיד אוטונומי לחלוטין בקרב, מבית Unitree.",
+      "note_en": "Unitree's fully autonomous humanoid combat demonstration."
+    },
+    {
+      "id": "2dbyg67EtUA",
+      "title": "Agility Foundations: Functional Safety",
+      "channel": "Agility Robotics",
+      "published": "2026-09-24",
+      "note_he": "בטיחות פונקציונלית, מתוך הסדרה Agility Foundations.",
+      "note_en": "Functional safety, from the Agility Foundations series."
+    },
+    {
+      "id": "c_igmkuu0sI",
+      "title": "NVIDIA Halos SAFE: Autonomous Vehicle Safety Evaluation From Road Testing to Simulation",
+      "channel": "NVIDIA",
+      "published": "2026-10-23",
+      "note_he": "NVIDIA Halos SAFE: הערכת בטיחות של רכב אוטונומי, מבדיקות כביש ועד סימולציה.",
+      "note_en": "NVIDIA Halos SAFE: evaluating autonomous-vehicle safety from road testing to simulation."
+    },
+    {
+      "id": "HuYXf_3TNW8",
+      "title": "30 Home Generalization",
+      "channel": "Figure",
+      "published": "2026-09-24",
+      "note_he": "הכללה ב-30 בתים, מבית Figure.",
+      "note_en": "Figure on generalising across 30 homes."
+    },
+    {
+      "id": "PynQZyvtIk8",
+      "title": "Reachy Mini - Yo It's Your Boy (music video)",
+      "channel": "Hugging Face",
+      "published": "2026-10-10",
+      "note_he": "קליפ מוזיקלי של Reachy Mini מבית Hugging Face.",
+      "note_en": "A music video starring Hugging Face's Reachy Mini."
+    },
+    {
+      "id": "WpGs7DKe8QY",
+      "title": "Agility Foundations: Data Security",
+      "channel": "Agility Robotics",
+      "published": "2026-09-24",
+      "note_he": "אבטחת מידע, מתוך הסדרה Agility Foundations.",
+      "note_en": "Data security, from the Agility Foundations series."
+    },
+    {
+      "id": "oZpzi8Vhgsg",
+      "title": "Innovation at Agility: Digit Redecorates",
+      "channel": "Agility Robotics",
+      "published": "2026-09-24",
+      "note_he": "Digit מעצב מחדש את המשרד של Agility Robotics.",
+      "note_en": "Digit redecorates at Agility Robotics."
+    },
+    {
+      "id": "IqhDPbRrsh4",
+      "title": "Super AI Agents for Science, Manufacturing and Engineering  | GTC Berlin 2026 Edition",
+      "channel": "NVIDIA",
+      "published": "2026-10-22",
+      "note_he": "סוכני AI למדע, לתעשייה ולהנדסה, מתוך GTC ברלין 2026.",
+      "note_en": "Super AI agents for science, manufacturing and engineering, from GTC Berlin 2026."
+    },
+    {
+      "id": "VsZpy3aFLeY",
+      "title": "Official Keynote Opening Video | NVIDIA GTC Berlin 2026",
+      "channel": "NVIDIA",
+      "published": "2026-10-22",
+      "note_he": "סרטון הפתיחה של נאום GTC ברלין 2026.",
+      "note_en": "The official opening video of the GTC Berlin 2026 keynote."
+    },
+    {
+      "id": "JegVE_xMY_w",
+      "title": "NVIDIA Foundational Technology Montage | GTC Berlin 2026 Edition",
+      "channel": "NVIDIA",
+      "published": "2026-10-22",
+      "note_he": "מונטאז׳ טכנולוגיות היסוד של NVIDIA, מהדורת GTC ברלין 2026.",
+      "note_en": "A montage of NVIDIA's foundational technologies, GTC Berlin 2026 edition."
+    },
+    {
+      "id": "Y39uub4n0LA",
+      "title": "How Lila Sciences’ AI and Automated Labs Help Scientists Discover New Medicines Faster",
+      "channel": "NVIDIA",
+      "published": "2026-10-22",
+      "note_he": "איך Lila Sciences משלבת AI ומעבדות אוטומטיות לגילוי תרופות.",
+      "note_en": "How Lila Sciences uses AI and automated labs to discover medicines."
+    },
+    {
+      "id": "6yGRxk0qK7U",
+      "title": "Waymo’s Driven with Andrew Freund: S3 Episode 7 with Trixie Mattel",
+      "channel": "Waymo",
+      "published": "2026-09-24",
+      "note_he": "Waymo's Driven עם Andrew Freund, עונה 3 פרק 7.",
+      "note_en": "Waymo's Driven with Andrew Freund: season 3, episode 7."
+    },
+    {
+      "id": "qdUQJArUk30",
+      "title": "Official Keynote Closing Video | NVIDIA GTC Berlin 2026",
+      "channel": "NVIDIA",
+      "published": "2026-10-22",
+      "note_he": "סרטון הסיום של נאום GTC ברלין 2026.",
+      "note_en": "The official closing video of the GTC Berlin 2026 keynote."
     }
   ]
 }
