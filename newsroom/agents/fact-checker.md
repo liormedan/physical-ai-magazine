@@ -31,3 +31,4 @@ Publish, or edit `data/issues/`.
 
 ## Company links
 For every name the draft adds to `data/entities.json`, open the URL and confirm it is that company's or project's official site. A wrong or unverified link is a FAIL on that item; remove the entry only if the Reporter has no better one.
+- **No violent content:** the Fact-checker also rejects a video that shows robots fighting, combat displays or weapons.

@@ -1,18 +1,129 @@
 {
   "$comment": "YouTube channels the video playlist draws from. scripts/videos.mjs resolves each handle to its channel id once (cached in newsroom/.paperclip/video-channel-ids.json) and reads the channel's public Videos page (the RSS feeds answer 404 as of Oct 2026); no API key. Add or remove channels here.",
   "channels": [
-    { "handle": "@NVIDIAOmniverse", "name": "NVIDIA Omniverse & Robotics" },
-    { "handle": "@NVIDIA", "name": "NVIDIA" },
-    { "handle": "@BostonDynamics", "name": "Boston Dynamics" },
-    { "handle": "@figureai", "name": "Figure" },
-    { "handle": "@unitreerobotics", "name": "Unitree" },
-    { "handle": "@AgilityRobotics", "name": "Agility Robotics" },
-    { "handle": "@1XTech", "name": "1X" },
-    { "handle": "@googledeepmind", "name": "Google DeepMind" },
-    { "handle": "@HuggingFace", "name": "Hugging Face" },
-    { "handle": "@IEEESpectrum", "name": "IEEE Spectrum" },
-    { "handle": "@TwoMinutePapers", "name": "Two Minute Papers" },
-    { "handle": "@Waymo", "name": "Waymo" },
-    { "handle": "@therobotreport", "name": "The Robot Report" }
+    {
+      "handle": "@NVIDIAOmniverse",
+      "name": "NVIDIA Omniverse & Robotics"
+    },
+    {
+      "handle": "@NVIDIA",
+      "name": "NVIDIA"
+    },
+    {
+      "handle": "@BostonDynamics",
+      "name": "Boston Dynamics"
+    },
+    {
+      "handle": "@figureai",
+      "name": "Figure"
+    },
+    {
+      "handle": "@unitreerobotics",
+      "name": "Unitree"
+    },
+    {
+      "handle": "@AgilityRobotics",
+      "name": "Agility Robotics"
+    },
+    {
+      "handle": "@1XTech",
+      "name": "1X"
+    },
+    {
+      "handle": "@googledeepmind",
+      "name": "Google DeepMind"
+    },
+    {
+      "handle": "@HuggingFace",
+      "name": "Hugging Face"
+    },
+    {
+      "handle": "@IEEESpectrum",
+      "name": "IEEE Spectrum"
+    },
+    {
+      "handle": "@TwoMinutePapers",
+      "name": "Two Minute Papers"
+    },
+    {
+      "handle": "@Waymo",
+      "name": "Waymo"
+    },
+    {
+      "handle": "@therobotreport",
+      "name": "The Robot Report"
+    },
+    {
+      "handle": "@Apptronik",
+      "name": "Apptronik"
+    },
+    {
+      "handle": "@tesla",
+      "name": "Tesla"
+    },
+    {
+      "handle": "@PhysicalIntelligence",
+      "name": "Physical Intelligence"
+    },
+    {
+      "handle": "@SkildAI",
+      "name": "Skild AI"
+    },
+    {
+      "handle": "@UniversalRobots",
+      "name": "Universal Robots"
+    },
+    {
+      "handle": "@ANYbotics",
+      "name": "ANYbotics"
+    },
+    {
+      "handle": "@Robotiq",
+      "name": "Robotiq"
+    },
+    {
+      "handle": "@UBTECHRobotics",
+      "name": "UBTECH"
+    },
+    {
+      "handle": "@AgiBotOfficial",
+      "name": "AgiBot"
+    },
+    {
+      "handle": "@zoox",
+      "name": "Zoox"
+    },
+    {
+      "handle": "@NEURARobotics",
+      "name": "NEURA Robotics"
+    },
+    {
+      "handle": "@XPeng",
+      "name": "XPENG"
+    },
+    {
+      "handle": "@DexterityAI",
+      "name": "Dexterity"
+    },
+    {
+      "handle": "@Mentee_Robotics",
+      "name": "Mentee Robotics"
+    },
+    {
+      "handle": "@ClearpathRobotics",
+      "name": "Clearpath"
+    },
+    {
+      "handle": "@HyundaiMotorGroup",
+      "name": "Hyundai Motor Group"
+    },
+    {
+      "handle": "@Wandercraft",
+      "name": "Wandercraft"
+    },
+    {
+      "handle": "@StandardBots",
+      "name": "Standard Bots"
+    }
   ]
 }

@@ -43,3 +43,7 @@ Touch `data/issues/`, publish, or mark your own draft as checked.
 Every company or project name in a title, summary or why line is underlined and linked to its official site by the site itself, from `data/entities.json` (name exactly as written in the text → official URL).
 - Write each name the same way every time (`NVIDIA`, `Agility Robotics`), in Latin letters.
 - For every new company or project in your draft, add it to `data/entities.json` with its **official** site (not an article or a press-release host). Open the URL first. If you cannot find an official site, do not add the name and say so in your handoff comment.
+
+## Video content rules
+- Prefer launches and explanations published by the companies themselves (what is new, what changed), from the last month.
+- No violent content: nothing showing robots fighting, combat or martial-arts displays, weapons or military use, and no competition or "games" highlight reels. When in doubt, leave it out.
