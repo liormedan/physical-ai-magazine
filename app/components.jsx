@@ -2,16 +2,10 @@ import Link from 'next/link';
 import { CATEGORIES, SECTIONS, EDITIONS, fmtDate } from '../lib/issues';
 import { coverSvg, catIcon } from '../lib/graphics';
 import { linkParts } from '../lib/entities';
+import AccountLink from './account-link';
+import { Bi } from './bi';
 
-// Both languages are always in the DOM; CSS shows the one in html[data-lang].
-export function Bi({ he, en, as: Tag = 'span', className }) {
-  return (
-    <>
-      <Tag className={className} lang="he" dir="rtl" data-l="he">{he}</Tag>
-      <Tag className={className} lang="en" dir="ltr" data-l="en">{en}</Tag>
-    </>
-  );
-}
+export { Bi };
 
 // Text with every known company or project name underlined and linked to its site.
 export function Linked({ text }) {
@@ -38,20 +32,30 @@ export function Tabs({ active }) {
 
 export function Masthead({ issue, active = '' }) {
   return (
-    <div className="band">
-      <header className="wrap mast">
-        <div className="meta">
-          <span><Bi he={`גיליון ${issue.number}`} en={`Issue No. ${issue.number}`} /></span>
-          <button id="lang" type="button" aria-label="Switch language / החלפת שפה">עברית · English</button>
-          <span><Bi he={fmtDate(issue.date, 'he-IL')} en={fmtDate(issue.date, 'en-US')} /></span>
+    <>
+      <div className="band">
+        <header className="wrap mast">
+          <div className="meta">
+            <span><Bi he={`גיליון ${issue.number}`} en={`Issue No. ${issue.number}`} /></span>
+            <span><Bi he={fmtDate(issue.date, 'he-IL')} en={fmtDate(issue.date, 'en-US')} /></span>
+          </div>
+          <Link className="brand" href="/">
+            <Bi he="מגזין פיזיקל AI" en="Physical AI Magazine" />
+            <small><Bi he="יומן יומי של בינה גופנית, רובוטיקה ואוטונומיה" en="A daily record of embodied AI, robotics & autonomy" /></small>
+          </Link>
+        </header>
+      </div>
+      {/* pinned to the top of the window while reading */}
+      <div className="topbar">
+        <div className="wrap bar">
+          <Tabs active={active} />
+          <div className="bar-tools">
+            <AccountLink active={active === 'account'} />
+            <button id="lang" type="button" aria-label="Switch language / החלפת שפה">עברית · English</button>
+          </div>
         </div>
-        <Link className="brand" href="/">
-          <Bi he="מגזין פיזיקל AI" en="Physical AI Magazine" />
-          <small><Bi he="יומן יומי של בינה גופנית, רובוטיקה ואוטונומיה" en="A daily record of embodied AI, robotics & autonomy" /></small>
-        </Link>
-        <Tabs active={active} />
-      </header>
-    </div>
+      </div>
+    </>
   );
 }
 
