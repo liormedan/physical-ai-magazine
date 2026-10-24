@@ -1,0 +1,330 @@
+{
+  "month": "2026-10",
+  "period_from": "2026-09-24",
+  "period_to": "2026-10-24",
+  "headline_he": "אוקטובר 2026: מודלי רובוטיקה נפתחים כשירות, הומנואידים נכנסים לייצור מוקדם, והכסף עוקב",
+  "headline_en": "October 2026: robot models open up as services, humanoids enter early production, and the money follows",
+  "intro_he": "בחודש הזה עברה בינה גופנית מהדגמות למוצרים שאפשר לגשת אליהם. Physical Intelligence פתחה ממשק ציבורי בגרסת בטא לאימון והרצה של מודלי רובוט, Google הציגה גרסת רובוטיקה של Gemini 4 Argon, ו-NEURA חשפה מודל תפיסה-שפה-פעולה שרץ מקומית על הרובוט. במקביל הגיעו מהחברות הצהרות על ייצור: טסלה אמרה שהחלה לייצר את Optimus במפעל פרמונט, ו-AGIBOT דיווחה על הרובוט ה-20,000 שיצא מקו הייצור שלה. כל אלה הצהרות של החברות עצמן, והמקורות כמעט אינם מציגים פריסה בתשלום, מדדי ביצוע או לקוחות מוכרים.\n\nשלושה חוטים חוזרים לאורך החודש. הראשון הוא הפיכת המודל לשכבה נפרדת מהגוף: ממשקי API, מודלים שרצים על חומרה של כמה יצרנים, ופלטפורמות הדמיה פתוחות של NVIDIA. השני הוא ההתרחבות של רובוטקסי לשווקים חדשים, מדריד וטורונטו אצל Waymo ושותפויות אירופיות סביב NVIDIA, לצד בחינה רגולטורית ובטיחותית שנשארת פתוחה. השלישי הוא הכסף: רכישה של 675 מיליון דולר בידי Omron, סבבים גדולים לחברות כמו Eka Robotics ו-Ultra, והצעדים של Agility Robotics, Unitree ו-Noetix אל שוק ההון.\n\nמה השתנה לענף? הדגש עובר מ״מה הרובוט יודע לעשות בסרטון״ ל״מי מחזיק את שכבת התוכנה, את הייצור ואת הגישה לשוק״. זו קריאה שלנו ולא עובדה מהמקורות: ברוב הסיפורים החודש מה שחסר הוא נתון עצמאי, ולכן חלק גדול ממה שנאמר כאן הוא טענה שעוד לא נבחנה.",
+  "intro_en": "This month physical AI moved from demonstrations toward products people can actually reach. Physical Intelligence opened a public beta API for training and running robot models, Google presented a robotics version of Gemini 4 Argon, and NEURA unveiled a perception-language-action model that runs locally on the robot. At the same time the companies made production claims: Tesla said it has started producing Optimus at Fremont, and AGIBOT reported the 20,000th robot off its line. All of these are the companies' own statements, and the sources almost never show a paid deployment, performance metrics or named customers.\n\nThree threads recur through the month. The first is the model becoming a layer separate from the body: APIs, models running on several makers' hardware, and NVIDIA's open simulation platforms. The second is robotaxi expansion into new markets, Madrid and Toronto for Waymo and European partnerships around NVIDIA, alongside regulatory and safety scrutiny that remains open. The third is money: a $675 million acquisition by Omron, large rounds for companies such as Eka Robotics and Ultra, and moves by Agility Robotics, Unitree and Noetix toward public markets.\n\nWhat changed for the field? The emphasis is shifting from what the robot can do in a video to who owns the software layer, the manufacturing and the route to market. That is our reading, not a fact from the sources: in most stories this month the missing piece is independent data, so much of what is said here is a claim that has not yet been tested.",
+  "numbers": [
+    {
+      "value": "5,000,000",
+      "label_he": "רובוטים תעשייתיים פועלים במפעלים בעולם ב-2025, שיא (IFR)",
+      "label_en": "industrial robots operating in factories worldwide in 2025, a record (IFR)",
+      "source_name": "IFR",
+      "source_url": "https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally"
+    },
+    {
+      "value": "~25,000",
+      "label_he": "משלוחי הומנואידים בעולם במחצית הראשונה של 2026, לפי IDC כפי שמצוטט בהודעת AGIBOT",
+      "label_en": "global humanoid shipments in H1 2026, per IDC as cited in an AGIBOT release",
+      "source_name": "AGIBOT",
+      "source_url": "https://www.agibot.com/article/231/detail/125.html"
+    },
+    {
+      "value": "$675M",
+      "label_he": "מחיר המזומן שמשלמת Omron עבור OnLogic",
+      "label_en": "cash price Omron is paying for OnLogic",
+      "source_name": "TechNode Global",
+      "source_url": "https://technode.global/2026/10/14/omron-onlogic-acquisition-physical-ai/"
+    },
+    {
+      "value": "$620M+",
+      "label_he": "תמורה ברוטו צפויה מהמיזוג של Agility Robotics עם Churchill Capital Corp XI, לפי החברה",
+      "label_en": "expected gross proceeds from Agility Robotics' merger with Churchill Capital Corp XI, per the company",
+      "source_name": "Agility Robotics",
+      "source_url": "https://www.agilityrobotics.com/content/agility-robotics-and-churchill-capital-corp-xi-s-4-registration-statement-declared-effective-by-sec-in-connection-with-proposed-business-combination"
+    },
+    {
+      "value": "כמעט 2 מיליון",
+      "label_he": "מיילים של רובוטקסי ללא נהג מפקח במצטבר אצל Tesla בסוף הרבעון השלישי, לפי החברה",
+      "label_en": "cumulative unsupervised robotaxi miles for Tesla at the end of Q3, per the company",
+      "source_name": "Tesla Q3 2026 update (SEC)",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/0001318605/000162828026066738/exhibit9914.htm"
+    },
+    {
+      "value": "20 מיליון+",
+      "label_he": "נסיעות שמדווחת Waymo שביצעה, בהודעה על מדריד",
+      "label_en": "trips Waymo says it has completed, in its Madrid announcement",
+      "source_name": "Waymo",
+      "source_url": "https://waymo.com/blog/2026/10/waymo-in-madrid-region/"
+    }
+  ],
+  "sections": [
+    {
+      "key": "hardware",
+      "lead_he": "בצד החומרה החודש בלטו שלושה כיוונים: טענות ראשונות על ייצור הומנואידים, ידיים עם חישת מגע כמרכז העיצוב, ומחשוב על הגוף שמתכנס סביב NVIDIA. בכל המקרים הנתונים הם של החברות, והמקורות כמעט אינם מפרטים פריסה בתשלום.\n\nהשאלה שנשארה פתוחה היא המעבר מייצור מוקדם לאספקה בהיקף: מה שנאמר בשיחת הרווחים של טסלה מתאר כוונות ויעדים, ואילו היצרניות הסיניות מדווחות על מסירות בפועל, למשל הרובוט ה-20,000 של AGIBOT ל-Chimelong, אך בלי ערכי חוזים ובלי נתוני הפעלה, ואלה דיווחים של החברות עצמן.",
+      "lead_en": "On the hardware side three directions stood out this month: first production claims for humanoids, hands with tactile sensing at the centre of the design, and onboard compute converging around NVIDIA. In every case the figures come from the companies, and the sources rarely detail a paid deployment.\n\nThe open question is the move from early production to deliveries at scale: what was said on Tesla's earnings call describes intentions and targets, while the Chinese makers report actual deliveries, for example AGIBOT's 20,000th robot to Chimelong, but without contract values or operating data, and these are the companies' own reports.",
+      "items": [
+        {
+          "category": "robotics",
+          "date": "2026-09-24",
+          "title_he": "AGIBOT: הרובוט ה-20,000 נמסר ל-Chimelong, ויותר מ-300 רובוטים ייפרסו בפארק שעשועים",
+          "title_en": "AGIBOT: 20,000th robot goes to Chimelong, with 300+ robots for a theme park",
+          "summary_he": "בהודעה מ-24 בספטמבר מסרה AGIBOT שהרובוט ה-20,000 שיצא מקו הייצור שלה נמסר לחברה הסינית Chimelong. בשלב הראשון ייפרסו יותר מ-300 רובוטים בפארק Chimelong Spaceship, ולפי ההודעה מתוכננת הרחבה. הרובוטים אמורים לשמש לבידור, חינוך, שירות מבקרים ותפעול מלונאי, ו-AGIBOT, Chimelong ו-China Mobile הקימו לשם כך רשת 5G-A ייעודית. ההודעה מדברת על ״שבעה תרחישי ליבה״ אך מפרטת שמונה. המקור אינו מציין את ערך החוזה, ואינו אומר אם מדובר בפריסה בתשלום או בפיילוט.",
+          "summary_en": "In a September 24 release, AGIBOT said the 20,000th robot off its production line went to China's Chimelong. In a first phase, more than 300 robots will be deployed at Chimelong Spaceship Park, with expansion planned, according to the release. The robots are meant for entertainment, education, visitor services and hotel operations, and AGIBOT, Chimelong and China Mobile set up a dedicated 5G-A network for it. The release speaks of seven core scenarios but lists eight. The source gives no contract value and does not say whether this is a paid deployment or a pilot.",
+          "why_he": "זו אחת מההצהרות הבודדות החודש על הספק ייצור מצטבר ופריסה במקום אחד, אבל היא הצהרה של החברה בלבד, בלי חוזה או נתוני תפעול שאפשר לבדוק.",
+          "why_en": "This is one of the few statements this month on cumulative output paired with a single-site deployment, but it is the company's own claim, with no contract or operating data to check.",
+          "source_name": "AGIBOT",
+          "source_url": "https://www.agibot.com/article/231/detail/123.html"
+        },
+        {
+          "category": "hardware",
+          "date": "2026-09-30",
+          "title_he": "DH-Robotics חושפת יד בעלת חמש אצבעות עם 13 דרגות חופש ב-IROS",
+          "title_en": "DH-Robotics shows a five-finger hand with 13 degrees of freedom at IROS",
+          "summary_he": "לפי דיווח של Unite.ai שמבוסס על הודעת החברה, DH-Robotics הציגה בכנס IROS בפיטסבורג את היד ADH-5-13. לפי החברה היא כוללת 13 דרגות חופש פעילות, שוקלת 735 גרם, נושאת 20 ק״ג לאחר אחיזה, ומחוברת למפרקים עם הנעה ישירה, וחזרתיות בקצות האצבעות של ±0.2 מ״מ. חישת מגע בקצות האצבעות מובנית, ולצידה אפשרויות לעור אלקטרוני ולחיישני כוח-מומנט. החברה הציגה גם יד בעלת שלוש אצבעות עם 7 דרגות חופש. המקור אינו מציין מחיר או מועד אספקה, והנתונים הם נתוני יצרן.",
+          "summary_en": "According to Unite.ai, reporting from the company's announcement, DH-Robotics showed the ADH-5-13 hand at IROS in Pittsburgh. The company says it has 13 active degrees of freedom, weighs 735 g, carries 20 kg once an object is grasped, uses direct-drive joints and has fingertip repeatability of ±0.2 mm. Fingertip tactile sensing is built in, with options for electronic skin and force-torque sensors. The company also showed a three-finger hand with 7 degrees of freedom. The source gives no price or shipping date, and the figures are the manufacturer's.",
+          "why_he": "ידיים עם חישת מגע הן צוואר הבקבוק המוצהר של הומנואידים, ויצרנית רכיבים שמוכרת ידיים מוכנות מאפשרת לחברות רובוט להתמקד בגוף ובמודל; בלי מחיר ובדיקה עצמאית קשה להעריך את ההשפעה.",
+          "why_en": "Hands with tactile sensing are a stated bottleneck for humanoids, and a component maker selling ready-made hands lets robot companies focus on the body and the model; without price or independent testing the impact is hard to judge.",
+          "source_name": "Unite.ai",
+          "source_url": "https://www.unite.ai/dh-robotics-unveils-adh-5-13-five-finger-dexterous-hand-at-iros-2026/"
+        },
+        {
+          "category": "humanoids",
+          "date": "2026-10-06",
+          "title_he": "Rohit Prasad, לשעבר בכיר ב-Amazon, ממונה למנכ״ל Boston Dynamics",
+          "title_en": "Former Amazon executive Rohit Prasad named Boston Dynamics CEO",
+          "summary_he": "Boston Dynamics הודיעה ב-6 באוקטובר על מינוי Rohit Prasad למנכ״ל, החל מ-7 באוקטובר. Prasad עבד 12 שנים ב-Amazon, שם כיהן כסגן נשיא בכיר וראש מדענים של Alexa ושל AGI והוביל את משפחת מודלי Nova. הוא מחליף את Amanda McMaster, סמנכ״לית הכספים ששימשה מנכ״לית זמנית מאז שהמנכ״ל הקודם Robert Playter עזב בפברואר. לפי ההודעה הוא מצוטט באומרו ש-Boston Dynamics ממוקמת באופן ייחודי לקדם בינה גופנית. כתבת The Robot Report מציינת שהדיווח אינו מזכיר פריסת ייצור של Atlas.",
+          "summary_en": "Boston Dynamics announced on October 6 that Rohit Prasad becomes CEO, effective October 7. Prasad spent 12 years at Amazon, as senior vice president and head scientist for Alexa and AGI, and led the Nova model family. He succeeds Amanda McMaster, the CFO who served as interim CEO after previous CEO Robert Playter left in February. Per the release he is quoted saying Boston Dynamics is uniquely positioned to advance physical AI. The Robot Report notes that the coverage reports no production deployment of Atlas.",
+          "why_he": "מינוי מנהל שהגיע מעולם המודלים ולא מהרובוטיקה מרמז, לפי קריאה שלנו, על ניסיון לחבר את הגוף של Boston Dynamics לשכבת מודלים; ההודעה עצמה אינה אומרת זאת.",
+          "why_en": "Appointing a leader from the world of models rather than robotics suggests, in our reading, an effort to connect Boston Dynamics' hardware to a model layer; the announcement itself does not say so.",
+          "source_name": "Boston Dynamics",
+          "source_url": "https://bostondynamics.com/news/boston-dynamics-appoints-rohit-prasad-as-chief-executive-officer/"
+        },
+        {
+          "category": "humanoids",
+          "date": "2026-10-21",
+          "title_he": "Tesla: ייצור Optimus החל בפרמונט, אבל ההתאמות ממשיכות",
+          "title_en": "Tesla: Optimus production has begun at Fremont, but design work continues",
+          "summary_he": "בעדכון הרבעון השלישי שהוגש ל-SEC כתבה Tesla ש״ייצור Optimus החל בפרמונט על קווים בנפח גבוה״ ושמדובר ברובוטים הראשונים באיכות ייצור שיוצרו; בטבלת המפעלים קליפורניה מסומנת כ״Early Ramp״ וטקסס כ״בבנייה״. לפי סיכום של שיחת הרווחים באתר Not a Tesla App, מאסק אמר שהגעה לכ-20,000 יחידות בשבוע עשויה לקחת לפחות שנה, ושמסירות ללקוחות חיצוניים צפויות בסביבות סוף 2027; זהו דיווח משני ולא תמליל. המקורות אינם מציינים כמות רובוטים שיוצרה, מחיר או לקוחות.",
+          "summary_en": "In its Q3 update filed with the SEC, Tesla wrote that Optimus production began at Fremont on high-volume lines and called them the first production-quality bots it has made; in the factory table California is marked Early Ramp and Texas under construction. According to a summary of the earnings call on Not a Tesla App, Musk said reaching about 20,000 units a week could take at least a year and that deliveries to outside customers are expected around the end of 2027; that is a secondary report, not a transcript. The sources give no count of robots built, no price and no customers.",
+          "why_he": "הניסוח בדוח ל-SEC זהיר מההצהרות הפומביות, והלוח הזמנים לאספקה חיצונית מזיז את ההכנסה המשמעותית הראשונה מ-Optimus לשנת 2027 לכל הפחות; זו קריאה שלנו.",
+          "why_en": "The SEC wording is more measured than the public statements, and the timetable for outside deliveries pushes any meaningful Optimus revenue to 2027 at the earliest; that is our reading.",
+          "source_name": "Tesla Q3 2026 update (SEC 8-K)",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/0001318605/000162828026066738/exhibit9914.htm"
+        },
+        {
+          "category": "humanoids",
+          "date": "2026-10-21",
+          "title_he": "NVIDIA ו-Agile Robots: הומנואיד ייחוס על Jetson Thor, זמין בתחילת 2027",
+          "title_en": "NVIDIA and Agile Robots: a reference humanoid on Jetson Thor, available early 2027",
+          "summary_he": "בהודעה שפורסמה בכנס GTC ברלין הציגה NVIDIA את Agile ONE SN, הומנואיד ייחוס של Agile Robots שנבנה על Isaac GR00T ו-Jetson Thor. לפי ההודעה גובהו 1.40 מטר, משקלו 40 ק״ג, יש לו 31 דרגות חופש ועומס של 3 ק״ג לכל זרוע, ובכל יד 20 דרגות חופש ובקרת כוח ב-1 קילו-הרץ. הזמינות מתוכננת ל״תחילת 2027״, ושילוב בסביבת הבטיחות Halos מתוכנן ועוד לא הושלם. ההודעה מוסיפה את Isaac Lab 3.0 בזמינות כללית. אין בה מחיר, הזמנות של לקוחות או אישור בטיחות.",
+          "summary_en": "In a release at GTC Berlin, NVIDIA presented Agile ONE SN, a reference humanoid from Agile Robots built on Isaac GR00T and Jetson Thor. According to the release it is 1.40 m tall, weighs 40 kg, has 31 degrees of freedom and a 3 kg payload per arm, with 20 degrees of freedom and 1 kHz force control in each hand. Availability is planned for early 2027, and integration with the Halos safety stack is planned, not finished. The release also announces Isaac Lab 3.0 in general availability. It gives no price, customer orders or safety certification.",
+          "why_he": "NVIDIA ממשיכה לקבוע את בסיס החומרה והתוכנה של הומנואידים, כך שיצרנים קטנים יכולים להתחיל מתכנון ייחוס; כל המפרט הוא של NVIDIA, וחסרות עדיין עדויות לשימוש בפועל.",
+          "why_en": "NVIDIA keeps setting the hardware and software baseline for humanoids, so smaller makers can start from a reference design; the whole specification is NVIDIA's, and evidence of real use is still missing.",
+          "source_name": "NVIDIA",
+          "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Advances-Isaac-Platform-for-General-Purpose-Robotics-With-New-Reference-Humanoid-Frameworks-Simulation-Pipelines-and-Data/default.aspx"
+        },
+        {
+          "category": "hardware",
+          "date": "2026-10-21",
+          "title_he": "Humanoid הבריטית מאחדת שני מחשבים על הגוף למערכת אחת על Jetson Thor",
+          "title_en": "UK company Humanoid merges two onboard computers into one on Jetson Thor",
+          "summary_he": "לפי Humanoids Daily, החברה הבריטית Humanoid, שמפתחת את HMND 01, אמרה שמעבר ל-Jetson Thor אפשר לה לאחד שני מחשבים על הגוף למערכת אחת תוך שמירה על אותה יכולת חישוב. ההרחבה של שיתוף הפעולה עם NVIDIA כוללת את Isaac OS, את Holoscan Sensor Bridge ואת Holoscan SDK; החברה כבר משתמשת ב-Isaac Lab וב-Isaac Sim. היתרונות בזמני תגובה ובחלוקת זיכרון הם טענות של החברה. המקור אינו כולל זמני תגובה שנמדדו, חיסכון באנרגיה, שיעורי הצלחה או פריסה אצל לקוח.",
+          "summary_en": "According to Humanoids Daily, the UK company Humanoid, which builds the HMND 01, said moving to Jetson Thor let it combine two onboard computers into one system while keeping the same compute capacity. The expanded collaboration with NVIDIA includes Isaac OS, the Holoscan Sensor Bridge and the Holoscan SDK; the company already uses Isaac Lab and Isaac Sim. The latency and memory-sharing benefits are the company's claims. The source includes no measured latency, power savings, success rates or customer deployment.",
+          "why_he": "פישוט ארכיטקטורת המחשוב מקטין משקל, צריכת חשמל ומורכבות בהומנואיד, אבל בלי מדידות העניין נשאר טענה, והוא מחזק את התלות בספק מחשוב אחד.",
+          "why_en": "Simplifying the compute architecture can cut weight, power draw and complexity in a humanoid, but without measurements it remains a claim, and it deepens reliance on a single compute supplier.",
+          "source_name": "Humanoids Daily",
+          "source_url": "https://www.humanoidsdaily.com/news/humanoid-nvidia-jetson-thor-onboard-computing"
+        }
+      ]
+    },
+    {
+      "key": "software",
+      "lead_he": "התוכנה והמודלים היו הציר של החודש. שלוש חברות גדולות, Physical Intelligence, Google DeepMind ו-NEURA, פרסמו מודלי רובוט בשלוש צורות שונות: ממשק ענן, מודל כללי ממשפחת Gemini ומודל מקומי על הרובוט. בצד הרכב האוטונומי נמשכו הרחבות לשווקים חדשים, ולצידן שאלות רגולטוריות פתוחות.\n\nהמשותף: ברוב הפרסומים אין השוואה עצמאית. מדדים כמו 87% ב-ERQA הם דיווח עצמי, ותנאי הגישה ל-API של Physical Intelligence עדיין מוגבלים לרשימת המתנה.",
+      "lead_en": "Software and models were the month's axis. Three major players, Physical Intelligence, Google DeepMind and NEURA, released robot models in three different forms: a cloud interface, a general Gemini-family model and a model running locally on the robot. On the autonomous-vehicle side, expansion into new markets continued, alongside open regulatory questions.\n\nWhat they share is that most releases lack an independent comparison. Metrics such as 87% on ERQA are self-reported, and access to Physical Intelligence's API is still limited to a waitlist.",
+      "items": [
+        {
+          "category": "models",
+          "date": "2026-10-13",
+          "title_he": "Physical Intelligence פותחת בטא של ממשק Pi API למודלי רובוט",
+          "title_en": "Physical Intelligence opens a beta of the Pi API for robot models",
+          "summary_he": "Physical Intelligence מודיעה בבלוג שלה שהמודלים העדכניים שלה זמינים דרך Pi API בבטא: אפשר להעלות נתונים, לכוון את המודלים ולהריץ הסקה בענן על רובוטים של הלקוח. לפי Unite.ai הגישה בהרשמה לרשימת המתנה, ומספר קטן של חברות קיבל גישה מוקדמת, ובהן Chef Robotics ו-Formic. הדיווח מוסיף שחברת Actor הציגה מעמיס גלגלי ללא מפעיל שפועל בעבודה מסחרית, כפי שהחברה תיארה, ושחלק מהמשתמשים נתקלו בבעיות קישוריות. החברה מתארת את התוצאות כ״עדיין בראשית דרכן״. המקורות אינם מציינים מחיר, גודל מודל, מדדים או מספר המשתתפים בבטא.",
+          "summary_en": "Physical Intelligence says in its blog that its latest models are available through the Pi API in beta: users can upload data, fine-tune the models and run cloud-hosted inference on their own robots. According to Unite.ai, access is by waitlist and a small number of companies got early access, among them Chef Robotics and Formic. The report adds that Actor showed an operator-less wheel loader working commercially, as the company described it, and that some users hit connectivity problems. The company describes the results as still early. The sources give no price, model size, benchmarks or number of beta participants.",
+          "why_he": "מודל שמוצע כשירות ענן לרובוטים של אחרים הוא מעבר ממחקר למוצר, אבל תלות בחיבור ענן והיעדר מדדים מגבילים כרגע את ההערכה של ערכו; זו קריאה שלנו.",
+          "why_en": "A model offered as a cloud service for other companies' robots is a step from research to product, but cloud dependence and the lack of metrics limit judging its value for now; that is our reading.",
+          "source_name": "Unite.ai",
+          "source_url": "https://www.unite.ai/physical-intelligence-opens-pi-api-beta-for-robot-foundation-models/"
+        },
+        {
+          "category": "models",
+          "date": "2026-10-13",
+          "title_he": "Google DeepMind מציגה את Gemini 4 Argon לרובוטיקה",
+          "title_en": "Google DeepMind presents Gemini 4 Argon for robotics",
+          "summary_he": "בפוסט בבלוג המפתחים של Google מוצג Gemini 4 Argon לשליטה ברובוטים, להמרת תצוגות אמיתיות לסימולציה, להבנה פיזית ולשיפור עצמי. הפוסט מדווח על ציון של 87% במדד ERQA להיגיון גופני, ואומר שהוא עולה על כל מודל חזית אחר, אך אינו מציג ציונים של מתחרים. בהדגמת שיפור על בסיס סימולציה עלתה ההצלחה בעולם האמיתי מ-56% ל-75% וזמן ההשלמה ירד מ-35 ל-24 שניות, על 4,500 ומעלה אפיזודות סימולציה. המודל זמין ב-Gemini API בתשלום; המקור אינו מציין מחיר, גודל מודל או מספר ניסויים בהדגמות החומרה.",
+          "summary_en": "A post on Google's developer blog presents Gemini 4 Argon for robot control, converting real scenes into simulation, physical understanding and self-improvement. The post reports an 87% score on the ERQA embodied-reasoning benchmark and says it outperforms every other frontier model, but shows no competitor scores. In a simulation-based improvement demo, real-world success rose from 56% to 75% and completion time fell from 35 to 24 seconds, using more than 4,500 simulation episodes. The model is available through the paid Gemini API; the source gives no price, model size or number of trials in the hardware demos.",
+          "why_he": "חברת ענן גדולה שמגישה מודל רובוטיקה דרך ה-API הכללי שלה משנה את התחרות מול סטארט-אפים שמוכרים מודלים ייעודיים, אבל כל המדדים כאן דיווח עצמי.",
+          "why_en": "A major cloud company serving a robotics model through its general API changes the competition against startups selling dedicated models, but every metric here is self-reported.",
+          "source_name": "Google Developers Blog",
+          "source_url": "https://developers.googleblog.com/gemini-4-argon-for-robotics/"
+        },
+        {
+          "category": "models",
+          "date": "2026-10-14",
+          "title_he": "NEURA Robotics חושפת את Neuron AI, מודל תפיסה-שפה-פעולה שרץ מקומית",
+          "title_en": "NEURA Robotics unveils Neuron AI, a perception-language-action model that runs locally",
+          "summary_he": "NEURA Robotics הציגה את Neuron AI, שהיא מגדירה כמודל תפיסה-שפה-פעולה המשלב ראייה תלת-ממדית, מגע וכוח, שמע, מצב הרובוט ושפה, עם זיכרון. לפי העמוד של החברה המודל רץ מקומית על הרובוט, אומן על נתוני רובוט אמיתיים, נתוני סימולציה והדגמות אנושיות בחליפות חיישנים, ופועל על חמש צורות גוף. Schaeffler ו-Bosch מופיעות כשותפות נתונים תעשייתיות; העמוד אינו אומר אם הן לקוחות או משתתפות בפיילוט. תאריך ההכרזה, 14 באוקטובר, נלקח מדיווח של Logistik Heute. המקורות אינם כוללים מועד זמינות, מחיר או מדדים.",
+          "summary_en": "NEURA Robotics presented Neuron AI, which it calls a perception-language-action model combining 3D vision, touch and force, audio, robot state and language, with memory. According to the company's page the model runs locally on the robot, was trained on real robot data, simulation data and human demonstrations from sensor suits, and runs on five embodiments. Schaeffler and Bosch are named as industrial data partners; the page does not say whether they are customers or pilot participants. The October 14 announcement date comes from a Logistik Heute report. The sources give no availability date, price or benchmarks.",
+          "why_he": "מודל שרץ על הרובוט עצמו נותן יתרון בחביון ובפרטיות לתעשייה, אבל בלי מדדים ובלי מועד אספקה אי אפשר להשוות אותו למודלי הענן שפורסמו באותו שבוע.",
+          "why_en": "A model that runs on the robot itself offers industry an edge in latency and privacy, but without metrics or an availability date it cannot be compared with the cloud models announced the same week.",
+          "source_name": "NEURA Robotics",
+          "source_url": "https://neura-robotics.com/neuron-ai/"
+        },
+        {
+          "category": "research",
+          "date": "2026-10-16",
+          "title_he": "ETH Zurich: יד רובוטית שהופכת את האצבעות שלה לרגליים",
+          "title_en": "ETH Zurich: a robotic hand that uses its fingers as legs",
+          "summary_he": "לפי Robotics & Automation News, חוקרים מ-ETH Zurich פרסמו מאמר בשם ״Fingers as Legs״ שבו יד אנתרופומורפית מסחרית של WUJI הפכה למניפולטור נייד שמניע את עצמו. היד זחלה ללא חיבור, הסתובבה והתאוששה מנפילות, לחצה על מקשי מקלדת בלי ראייה ודחפה עצם בעזרת משוב חזותי מלמעלה. ההליכה נלמדה בלמידת חיזוק בסימולציה ועברה כיול עם מדידות מהחומרה. המקור אינו מציין היכן המאמר פורסם ואם עבר ביקורת עמיתים, ואינו מצביע על שימוש מסחרי. לא פתחנו את המאמר עצמו.",
+          "summary_en": "According to Robotics & Automation News, ETH Zurich researchers published a paper titled Fingers as Legs in which a commercial WUJI anthropomorphic hand becomes a self-propelled mobile manipulator. The hand crawled untethered, steered and recovered from falls, pressed keyboard keys without vision and pushed an object using overhead visual feedback. Locomotion was learned with reinforcement learning in simulation and calibrated with measurements from the hardware. The source does not say where the paper was published or whether it was peer-reviewed, and points to no commercial use. We did not open the paper itself.",
+          "why_he": "זו עבודת מחקר ולא מוצר, אך היא מראה כיוון: ידיים דקסטריות שמשמשות גם לתנועה, מה שעשוי להשפיע על תכנון רובוטים קטנים.",
+          "why_en": "This is research, not a product, but it shows a direction: dexterous hands that also serve for locomotion, which may influence the design of small robots.",
+          "source_name": "Robotics & Automation News",
+          "source_url": "https://roboticsandautomationnews.com/2026/10/16/eth-zurich-scientists-turn-wuji-robotic-hand-into-self-propelled-mobile-manipulator/105991/"
+        },
+        {
+          "category": "autonomy",
+          "date": "2026-10-20",
+          "title_he": "Waymo מכריזה על מדריד, ימים אחרי טורונטו",
+          "title_en": "Waymo announces Madrid, days after Toronto",
+          "summary_he": "Waymo מודיעה שהיא מתכוננת לשירות הסעות אוטונומי מלא באזור מדריד ושואפת לקבל נוסעים ראשונים ב-2027; הרכבים, Jaguar I-PACE, יתחילו בנהיגה ידנית ולאחר מכן בבדיקה טכנית עם מומחים מקומיים מאחורי ההגה. החברה מדווחת על יותר מ-20 מיליון נסיעות ועל יותר מ-400 מיליון ק״מ אוטונומיים מלאים, ועל 95% פחות תאונות עם פגיעה חמורה מבני אדם בערי הפעילות, בלי להציג שיטה. לפי Electrek, טורונטו, שהוכרזה ב-16 באוקטובר, היא העיר הקנדית הראשונה, עם נוסעים ציבוריים ב-2028. תקנת הפיילוט של אונטריו מבוטלת ב-13 באוקטובר 2027 ולא נקבעה תחליפה. אין פרטים על גודל הצי או היתרים במדריד.",
+          "summary_en": "Waymo says it is preparing fully autonomous ride-hailing in the Madrid region and aims to welcome its first riders in 2027; the Jaguar I-PACE vehicles start with manual driving, then technical validation with trained local specialists behind the wheel. The company reports more than 20 million trips and more than 400 million fully autonomous km, and 95% fewer serious-injury crashes than human drivers in its operating cities, with no method shown. According to Electrek, Toronto, announced October 16, is its first Canadian city, with public riders in 2028. Ontario's pilot regulation is revoked on October 13, 2027 and no replacement has been named. There are no details on fleet size or Madrid permits.",
+          "why_he": "שתי הכרזות בשבוע מצביעות על כוונה להרחיב לאירופה ולקנדה, אך שתיהן נשענות על לוחות זמנים של 2027 ו-2028 ועל רגולציה שטרם נקבעה; הנתונים הם דיווח עצמי של Waymo.",
+          "why_en": "Two announcements in one week point to an intent to expand into Europe and Canada, but both rest on 2027 and 2028 timelines and on regulation not yet set; the figures are Waymo's own reporting.",
+          "source_name": "Waymo",
+          "source_url": "https://waymo.com/blog/2026/10/waymo-in-madrid-region/"
+        },
+        {
+          "category": "autonomy",
+          "date": "2026-10-21",
+          "title_he": "Tesla: נהיגה עצמאית מלאה לרכבים פרטיים נדחית לרבעון השני של 2027",
+          "title_en": "Tesla: unsupervised FSD for customer cars pushed to Q2 2027",
+          "summary_he": "לפי Electrek, ראש ה-AI של Tesla Ashok Elluswamy אמר בשיחת הרווחים ש-FSD ללא פיקוח לרכבים בבעלות לקוחות יגיע ברבעון השני של 2027; השלב הראשון הוא צירוף הרכב לצי הרובוטקסי המנוהל של Tesla ונהיגה ללא פיקוח רק באזורי הרובוטקסי הקיימים. בעדכון הרבעון השלישי ל-SEC כותבת Tesla שהמיילים של הרובוטקסי ללא פיקוח במצטבר גדלו פי שמונה והגיעו ל״כמעט שני מיליון״ ושהיא התחילה שירות עם Cybercab ב-3 בספטמבר באוסטין. המספר שונה מ-3.11 מיליון המייל מדוח הבטיחות שסיקרנו, כי הוא נמדד אחרת. המקורות אינם כוללים תנאים כספיים לבעלי רכב, ולא פירוט הבסיס הבטיחותי ללוח הזמנים.",
+          "summary_en": "According to Electrek, Tesla's AI chief Ashok Elluswamy said on the earnings call that unsupervised FSD for customer-owned cars arrives in Q2 2027; the first step is adding the car to Tesla's managed Robotaxi fleet and driving unsupervised only inside existing Robotaxi zones. In its Q3 update to the SEC, Tesla writes that cumulative unsupervised Robotaxi miles grew eightfold and reached nearly two million, and that it began Cybercab rides in Austin on September 3. That number differs from the 3.11 million miles in the safety report we covered, because it is measured differently. The sources include no financial terms for car owners and no detail on the safety basis for the timeline.",
+          "why_he": "הדחייה לשנת 2027 מקטינה את הציפייה לשירות פרטי מלא בטווח הקרוב; חשוב להבחין בין ״מייל ללא פיקוח״ בדוח ל-SEC ל״מייל אוטונומי״ בדוח הבטיחות, שני נתונים שאינם ניתנים להשוואה ישירה.",
+          "why_en": "The slip to 2027 lowers expectations for full private-car service in the near term; it is important to separate unsupervised miles in the SEC filing from autonomous miles in the safety report, two figures that are not directly comparable.",
+          "source_name": "Electrek",
+          "source_url": "https://electrek.co/2026/10/21/tesla-unsupervised-fsd-q2-2027-robotaxi-fleet/"
+        },
+        {
+          "category": "autonomy",
+          "date": "2026-10-22",
+          "title_he": "NVIDIA Hyperion ו-Alpamayo נבחרים על ידי יצרניות אירופיות, בראשן Bolt",
+          "title_en": "European makers pick NVIDIA Hyperion and Alpamayo, led by Bolt",
+          "summary_he": "Electrive מדווח מכנס GTC ברלין ש-Bolt בחרה ב-Alpamayo Stack של NVIDIA לשירות הרובוטקסי המתוכנן שלה באירופה, ושהיא מתכננת לפחות 25,000 רכבי Lucid מסוג Level 4. איסוף הנתונים צפוי להתחיל בשנה הבאה במדריד, בכפוף לאישור רגולטורי, ויעד החברה הוא 100,000 רכבים אוטונומיים עד 2035. Volkswagen Commercial Vehicles הציגה את ID. Buzz AD על Hyperion, אך לפי הכתבה הרכב משתמש כיום בטכנולוגיה של Mobileye. הכתבה מצטטת טענות של NVIDIA לחיסכון של עד 90% בנסיעות בדיקה ועד 85% בקיצור מחזורי פיתוח, והן תחזיות ולא תוצאות מייצור סדרתי. אין תאריכי השקה מסחרית.",
+          "summary_en": "Electrive reports from GTC Berlin that Bolt chose NVIDIA's Alpamayo Stack for its planned European robotaxi service, and plans at least 25,000 Level 4-capable Lucid vehicles. Data collection is expected to start next year in Madrid, pending regulatory approval, and the company's target is 100,000 autonomous vehicles by 2035. Volkswagen Commercial Vehicles showed the ID. Buzz AD on Hyperion, though per the article the vehicle currently uses Mobileye technology. The article cites NVIDIA's claims of up to 90% fewer physical test drives and up to 85% shorter development cycles, which are projections rather than results from series production. There are no commercial launch dates.",
+          "why_he": "אם הבחירות האלה יתממשו, NVIDIA תהפוך לספקית פלטפורמה של מערכות נהיגה אוטונומית גם באירופה ולא רק של שבבים; בינתיים אלה תוכניות, ולא פריסה.",
+          "why_en": "If these choices materialise, NVIDIA becomes a platform supplier of autonomous-driving systems in Europe too, not just a chip vendor; for now these are plans, not deployments.",
+          "source_name": "Electrive",
+          "source_url": "https://www.electrive.com/2026/10/22/nvidia-embraces-european-automakers/"
+        }
+      ]
+    },
+    {
+      "key": "business",
+      "lead_he": "בצד העסקי הכסף זרם לשלושה כיוונים: רכישות של ספקי תשתית, סבבים גדולים לחברות תוכנה ושירות, ומסלולים להנפקה. בגיליון 24 באוקטובר סיקרנו גם הערכה של IDC לגבי השפעת הגבלות ה-FCC על הכנסות הומנואידים בארה״ב.\n\nהסימן המשותף הוא שהמשקיעים מתמחרים כיוון ולא תוצאות: מרבית הסבבים שהתפרסמו לא הציגו לקוחות או הכנסות מפורטות, והפריסה בתשלום נשארה בדרך כלל לא מצוינת.",
+      "lead_en": "On the business side money flowed in three directions: acquisitions of infrastructure suppliers, large rounds for software and service companies, and routes to public markets. In our October 24 issue we also covered an IDC estimate of how the FCC curbs could affect U.S. humanoid revenue.\n\nThe common sign is that investors are pricing direction, not results: most of the rounds published showed no customers or detailed revenue, and paid deployment generally went unstated.",
+      "items": [
+        {
+          "category": "industry",
+          "date": "2026-09-24",
+          "title_he": "IFR: 5 מיליון רובוטים תעשייתיים פועלים בעולם, וסין מובילה בהתקנות",
+          "title_en": "IFR: 5 million industrial robots operate worldwide, and China leads installations",
+          "summary_he": "בדוח World Robotics 2026 מדווח ה-IFR שב-2025 הותקנו יותר מ-600,000 רובוטים תעשייתיים, עלייה של 11%, ושיא של 5 מיליון רובוטים פועלים, עלייה של 9%. סין התקינה 354,000 (עלייה של 20%, כ-59% מהסך העולמי); ארה״ב התקינה כמעט 38,500 (עלייה של 12%) ועקפה את יפן, שהתקינה 36,219 (ירידה של 19%). ה-IFR צופה 655,000 התקנות ב-2026 ו-806,000 ב-2029. הדוח מתייחס לרובוטים תעשייתיים קלאסיים ולא להומנואידים, והתחזיות הן של הארגון.",
+          "summary_en": "In its World Robotics 2026 report the IFR says more than 600,000 industrial robots were installed in 2025, up 11%, and a record 5 million were in operation, up 9%. China installed 354,000 (up 20%, about 59% of the global total); the US installed almost 38,500 (up 12%) and passed Japan, which installed 36,219 (down 19%). The IFR forecasts 655,000 installations in 2026 and 806,000 in 2029. The report concerns classic industrial robots rather than humanoids, and the forecasts are the organisation's.",
+          "why_he": "זה הרקע שעליו מתומחרים הומנואידים: בסיס מותקן ענק של רובוטים קלאסיים, שבו סין דומיננטית ומשפיעה על שרשראות אספקה ועל רגולציה.",
+          "why_en": "This is the backdrop against which humanoids are priced: a huge installed base of classic robots, in which China is dominant, affecting supply chains and regulation.",
+          "source_name": "IFR",
+          "source_url": "https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally"
+        },
+        {
+          "category": "industry",
+          "date": "2026-10-14",
+          "title_he": "Omron רוכשת את OnLogic תמורת 675 מיליון דולר",
+          "title_en": "Omron to acquire OnLogic for $675M",
+          "summary_he": "לפי TechNode Global, Omron חתמה ב-10 באוקטובר על הסכם לרכישת יצרנית המחשבים התעשייתיים האמריקאית OnLogic ואת חברת האם Interlogic תמורת 675 מיליון דולר במזומן. המחזור של Interlogic ב-2025 היה 154.2 מיליון דולר וה-EBITDA 22.6 מיליון. הצדדים מצפים שהמיזוג ייכנס לתוקף סביב ינואר 2027, בכפוף לאישורים רגולטוריים, ו-OnLogic תישאר עצמאית בתוך Omron. לפי הכתבה, ההיגיון הוא שילוב מחשבים תעשייתיים עם חישה ורובוטיקה של Omron להרחבת פעילות הבינה הגופנית בארה״ב ובאירופה. הכתבה אינה מפרטת לקוחות של OnLogic או הכנסות מרובוטיקה.",
+          "summary_en": "According to TechNode Global, Omron signed an agreement on October 10 to buy US industrial-computer maker OnLogic and its parent Interlogic for $675 million in cash. Interlogic's 2025 net sales were $154.2 million and EBITDA $22.6 million. The parties expect the merger to take effect around January 2027, subject to regulatory approvals, and OnLogic is to stay independent inside Omron. The article says the rationale is combining industrial PCs with Omron's sensing and robotics to expand its physical-AI business in the US and Europe. The article does not detail OnLogic's customers or revenue from robotics.",
+          "why_he": "המחיר, כ-4.4 מכפילי מכירות, מראה שחברות אוטומציה קיימות מוכנות לשלם על חומרת מחשוב קצה שנועדה לבינה גופנית; זה חישוב שלנו על בסיס הנתונים שבכתבה.",
+          "why_en": "The price, about 4.4 times sales, shows established automation firms are willing to pay for edge-compute hardware aimed at physical AI; this is our calculation from the figures in the article.",
+          "source_name": "TechNode Global",
+          "source_url": "https://technode.global/2026/10/14/omron-onlogic-acquisition-physical-ai/"
+        },
+        {
+          "category": "industry",
+          "date": "2026-10-13",
+          "title_he": "Agility Robotics: הצהרת ההרשמה נכנסה לתוקף והצבעת בעלי המניות נקבעה ל-2 בנובמבר",
+          "title_en": "Agility Robotics: registration statement effective, shareholder vote set for November 2",
+          "summary_he": "לפי אתר Agility Robotics, ה-SEC הכריז ב-13 באוקטובר על תוקף של טופס S-4 לקראת המיזוג עם Churchill Capital Corp XI, והאסיפה של בעלי המניות נקבעה ל-2 בנובמבר, כשהסגירה צפויה בנובמבר 2026. החברה מדווחת על תמורה ברוטו של יותר מ-620 מיליון דולר: כ-424 מיליון מהנאמנות בהנחה שלא תהיה פדיון, וכ-200 מיליון מהשקעה פרטית בהובלת Foxconn. הנתון על שווי של 2.5 מיליארד דולר לפני הכסף הגיע רק מסיכומי חיפוש של כיסוי משני, ולכן אינו מופיע כאן. בגיליון 23 באוקטובר סיקרנו את ההודעה על NVIDIA ו-Digit 5.",
+          "summary_en": "According to Agility Robotics' site, the SEC declared a Form S-4 effective on October 13 for the merger with Churchill Capital Corp XI, the shareholder meeting is set for November 2, and closing is expected in November 2026. The company reports gross proceeds of more than $620 million: about $424 million from the trust assuming no redemptions, and about $200 million from a private placement led by Foxconn. The $2.5 billion pre-money valuation appeared only in search summaries of secondary coverage, so it is not used here. In our October 23 issue we covered the NVIDIA and Digit 5 announcement.",
+          "why_he": "זו הצעד הציבורי המשמעותי הקרוב בענף ההומנואידים בארה״ב; התמורה בפועל תלויה בפדיונות בעלי מניות, ולכן הנתון הוא תקרה ולא ודאות.",
+          "why_en": "This is the nearest major public-market step for U.S. humanoids; actual proceeds depend on shareholder redemptions, so the figure is a ceiling, not a certainty.",
+          "source_name": "Agility Robotics",
+          "source_url": "https://www.agilityrobotics.com/content/agility-robotics-and-churchill-capital-corp-xi-s-4-registration-statement-declared-effective-by-sec-in-connection-with-proposed-business-combination"
+        },
+        {
+          "category": "industry",
+          "date": "2026-10-09",
+          "title_he": "Ultra גייסה 62 מיליון דולר ומעמיקה את הקשר עם Physical Intelligence",
+          "title_en": "Ultra raises $62M and deepens its tie to Physical Intelligence",
+          "summary_he": "לפי Fortune, Ultra גייסה 62 מיליון דולר: סבב A של 50 מיליון בהובלת Framework Ventures עם Y Combinator, וסבב זרע של 12 מיליון בהובלת Y Combinator ו-Next View. Ultra משכירה רובוטים למחסנים בדמי מנוי חודשיים עם דמי הטמעה ראשוניים, ולפי החברה, כפי ש-Fortune מדווחת, הרובוטים ארזו יותר מחצי מיליון הזמנות. Physical Intelligence מספקת את הבינה, ו-Fortune מדווחת שהיא מוערכת ב-5.6 מיליארד דולר. המקור אינו מציין שווי של Ultra, הכנסות, מספר רובוטים או שמות לקוחות, ואתר Framework Ventures אינו עקבי בין 50 ל-62 מיליון.",
+          "summary_en": "According to Fortune, Ultra raised $62 million: a $50 million Series A led by Framework Ventures with Y Combinator, and a $12 million seed led by Y Combinator and Next View. Ultra leases warehouse robots on a monthly subscription with an up-front integration fee, and, per the company as reported by Fortune, the robots have packed more than half a million orders. Physical Intelligence supplies the AI, and Fortune reports it is valued at $5.6 billion. The source gives no Ultra valuation, revenue, robot count or customer names, and Framework Ventures' own page is inconsistent between $50 and $62 million.",
+          "why_he": "מודל של השכרת רובוטים עם מודל חיצוני מראה כיצד חברות תוכנה כמו Physical Intelligence יכולות להגיע לשוק דרך שותפי פריסה; בלי נתוני הכנסות זה עדיין סיפור של כיוון.",
+          "why_en": "A robot-leasing model built on an external model shows how model companies such as Physical Intelligence can reach the market through deployment partners; without revenue data it is still a story about direction.",
+          "source_name": "Fortune",
+          "source_url": "https://fortune.com/2026/10/09/ultra-raises-62-million-fast-growing-robots-service-tie-up-ai-research-firm-physical-intelligence/"
+        },
+        {
+          "category": "industry",
+          "date": "2026-10-20",
+          "title_he": "Eka Robotics גייסה 150 מיליון דולר בסבב A",
+          "title_en": "Eka Robotics raises $150M Series A",
+          "summary_he": "בפוסט של Eka Robotics נמסר שסבב A בהיקף 150 מיליון דולר הובל על ידי a16z ו-F-Prime, עם השתתפות Obvious Ventures, E14 Fund, Samsung Next וגופים אסטרטגיים שלא נקראו בשמם. החברה טוענת לכ-1,500 פעולות בשעה לעומת קו בסיס אנושי של כ-600, ואינה מסבירה איך נמדד הנתון. הכסף נועד ל״האצת פריסות אצל לקוחות״. שווי של 1.45 מיליארד דולר מופיע בכותרת של TechCrunch אך לא בפוסט של Eka, ולכן לא נכלל. המקורות אינם מציינים לקוחות, פריסות, הכנסות או מחירים.",
+          "summary_en": "Eka Robotics' own post says a $150 million Series A was led by a16z and F-Prime, with participation from Obvious Ventures, E14 Fund, Samsung Next and unnamed strategic investors. The company claims about 1,500 operations per hour against a human baseline of about 600, and does not say how it was measured. The money is meant to accelerate customer deployments. A $1.45 billion valuation appears in a TechCrunch headline but not in Eka's post, so it is not included. The sources name no customers, deployments, revenue or prices.",
+          "why_he": "סבב A של 150 מיליון דולר לחברה ללא לקוחות מדווחים מעיד על התמחור שהשוק נותן כעת לצוותי בינה גופנית; הטענה על פעולות בשעה היא של החברה בלבד.",
+          "why_en": "A $150 million Series A for a company with no reported customers shows how the market is currently pricing physical-AI teams; the claim on operations per hour is the company's alone.",
+          "source_name": "Eka Robotics",
+          "source_url": "https://ekarobotics.com/blog/eka-robotics-raises-150m-to-build-superhuman-intelligence-for-the-physical-world"
+        },
+        {
+          "category": "industry",
+          "date": "2026-10-19",
+          "title_he": "Unitree: מניה עלתה ב-16% ודוח ראשון כחברה ציבורית צפוי ב-29 באוקטובר",
+          "title_en": "Unitree: shares up 16%, first report as a listed company expected October 29",
+          "summary_he": "לפי Global Times, מניית Unitree עלתה ב-19 באוקטובר ב-16.15% ל-495.92 יואן, שווי שוק של 200.58 מיליארד יואן (כ-28.1 מיליארד דולר), מהשפל של 404.03 ב-15 באוקטובר. החברה נסחרת בבורסת STAR מאז 19 באוגוסט, ולפי הדיווח תפרסם ב-29 באוקטובר את התוצאות הראשונות שלה; מועד זה אינו מאושר על ידי החברה. הכנסות המחצית הראשונה עלו ב-48.54% והרווח נטו לפי נתונים לא-GAAP ירד ב-19.34% ל-244 מיליון יואן. הכתבה אינה נותנת סיבה לעלייה, ואחד האנליסטים מצטט אותה כמתומחרת גבוה.",
+          "summary_en": "According to Global Times, Unitree's stock rose 16.15% on October 19 to 495.92 yuan, a market cap of 200.58 billion yuan (about $28.1 billion), from a low of 404.03 on October 15. The company has traded on the STAR Market since August 19 and, per the report, will publish its first results on October 29; the company has not confirmed that date. First-half revenue rose 48.54% and non-GAAP net profit fell 19.34% to 244 million yuan. The article gives no cause for the rally, and an analyst calls valuations inflated.",
+          "why_he": "Unitree היא המדד הציבורי הבולט ביותר לתמחור הומנואידים, והדוח הקרוב יהיה הפעם הראשונה שנבחן בה הפער בין הצמיחה בהכנסות לירידה ברווח; זו קריאה שלנו.",
+          "why_en": "Unitree is the most visible public gauge of humanoid pricing, and the coming report will be the first test of the gap between revenue growth and falling profit; that is our reading.",
+          "source_name": "Global Times",
+          "source_url": "https://www.globaltimes.cn/page/202610/1372579.shtml"
+        },
+        {
+          "category": "industry",
+          "date": "2026-10-22",
+          "title_he": "Noetix Robotics הגישה בחשאי בקשה להנפקה בהונג קונג, לפי Bloomberg",
+          "title_en": "Noetix Robotics confidentially files for a Hong Kong IPO, Bloomberg reports",
+          "summary_he": "The Standard מדווח, בהסתמך על Bloomberg, ש-Noetix Robotics הגישה בקשה חשאית להנפקה בהונג קונג, שעשויה לגייס כמה מאות מיליוני דולר ולהתרחש כבר בשנה הבאה; היקפה ומועדה אינם סופיים. שמה הרשמי של החברה הוא Songyan Power Beijing Technology, והיא נוסדה בספטמבר 2023. במארס גייסה מיליארד יואן בהובלת Chendao Capital, פלטפורמה של CATL. המוצרים כוללים את ההומנואיד הצרכני Bumi ואת סדרות N ו-E של דו-רגליים. המקור אינו מציין חתמים, שווי, הכנסות או משלוחים, ואת הדיווח של Bloomberg עצמו לא פתחנו.",
+          "summary_en": "The Standard reports, citing Bloomberg, that Noetix Robotics has confidentially filed for a Hong Kong IPO that could raise several hundred million dollars and happen as soon as next year; size and timing are not final. The company's formal name is Songyan Power Beijing Technology, and it was founded in September 2023. In March it raised 1 billion yuan in a round led by Chendao Capital, a CATL-affiliated platform. Its products include the Bumi consumer humanoid and the N-series and E-series bipeds. The source gives no underwriters, valuation, revenue or shipments, and we did not open the Bloomberg report itself.",
+          "why_he": "אם ההנפקה תצא לפועל, Noetix תצטרף ל-Unitree כנציגה ציבורית של יצרניות ההומנואידים הסיניות, אך כרגע מדובר בדיווח על בקשה חשאית בלבד.",
+          "why_en": "If the IPO goes ahead, Noetix would join Unitree as a public representative of Chinese humanoid makers, but for now this is only a report of a confidential filing.",
+          "source_name": "The Standard (Hong Kong)",
+          "source_url": "https://www.thestandard.com.hk/innovation/article/346197/CATL-backed-Noetix-Robotics-files-confidentially-for-HK-IPO-Bloomberg-reports"
+        }
+      ]
+    }
+  ],
+  "watch_he": [
+    "2 בנובמבר: האסיפה של בעלי המניות של Churchill Capital Corp XI על המיזוג עם Agility Robotics, כשהסגירה צפויה בנובמבר.",
+    "29 באוקטובר: הדוח הרבעוני הראשון של Unitree כחברה ציבורית, לפי Global Times, מועד שהחברה טרם אישרה.",
+    "5-6 בנובמבר: Humanoid Europe 2026, פסגת הומנואידים אירופה-סין במינכן, לפי אתר המארגנים.",
+    "השאלה הפתוחה בקנדה: מה יחליף את תקנת הפיילוט של אונטריו, שמבוטלת ב-13 באוקטובר 2027, ומה המשמעות לתוכנית של Waymo בטורונטו.",
+    "השאלה הפתוחה בהונג קונג: האם Noetix Robotics תפרסם את היקף ההנפקה ומועדה, שלפי הדיווח עוד לא נקבעו."
+  ],
+  "watch_en": [
+    "November 2: the Churchill Capital Corp XI shareholder meeting on the merger with Agility Robotics, with closing expected in November.",
+    "October 29: Unitree's first quarterly report as a listed company, per Global Times, a date the company has not yet confirmed.",
+    "November 5-6: Humanoid Europe 2026, a Europe-China humanoid summit in Munich, per the organisers' site.",
+    "The open question in Canada: what will replace Ontario's pilot regulation, revoked on October 13, 2027, and what that means for Waymo's Toronto plan.",
+    "The open question in Hong Kong: whether Noetix Robotics will publish the size and timing of its IPO, which per the report are not yet set."
+  ]
+}

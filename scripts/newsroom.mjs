@@ -210,6 +210,18 @@ async function issue() {
   await api('POST', `/routines/${id}/run`, { source: 'manual', idempotencyKey: `daily-issue-${today()}` });
   return 'גיליון היום הופעל';
 }
+// A one-off long-form monthly review: a task for the Editor-in-Chief (flow in editor-in-chief.md).
+async function review(month, from, to) {
+  if (!/^\d{4}-\d{2}$/.test(month ?? '') || !/^\d{4}-\d{2}-\d{2}$/.test(from ?? '') || !/^\d{4}-\d{2}-\d{2}$/.test(to ?? '')) throw new Error('usage: review <YYYY-MM> <from YYYY-MM-DD> <to YYYY-MM-DD>');
+  const ids = loadIds();
+  const created = await api('POST', `/companies/${ids.companyId}/issues`, {
+    title: `Monthly review ${month}`,
+    description: `Run the monthly review for ${month}, period ${from} to ${to}, through Reporter -> Fact-checker -> Language editor & Publisher, per the "Monthly review" sections of the role files in newsroom/agents/. Output: data/reviews/${month}.json, live at /review/${month}.`,
+    status: 'todo', priority: 'high', assigneeAgentId: ids.agents.editor,
+  });
+  await wake('editor');
+  return `סיכום חודשי ${month} נפתח (${created.identifier ?? created.id})`;
+}
 // Nudge an agent that went idle with work waiting (a handoff that did not wake it).
 async function wake(key = 'editor') {
   const id = loadIds().agents[key];
@@ -297,7 +309,7 @@ function printStatus(s) {
 
 // ---- main ------------------------------------------------------------------
 
-const [cmd, arg] = process.argv.slice(2);
+const [cmd, arg, arg2, arg3] = process.argv.slice(2);
 try {
   let out;
   if (cmd === 'start') out = await start();
@@ -306,12 +318,13 @@ try {
   else if (cmd === 'setup') out = await setup();
   else if (cmd === 'issue') out = await issue();
   else if (cmd === 'wake') out = await wake(arg);
+  else if (cmd === 'review') out = await review(arg, arg2, arg3);
   else if (cmd === 'approve' || cmd === 'reject') out = await decide(cmd, arg);
   else if (cmd === 'pause' || cmd === 'resume') out = await pause(cmd, arg);
   else if (cmd === 'names') {
     const n = names();
     out = `בריף: newsroom/naming/BRIEF.md\n${n.lastRound ? `סבב אחרון: ${n.lastRound} — ${n.candidates.join(' · ')}` : 'עוד אין סבב חדש; מעצב ומותג מציע בימי ראשון ב-10:00'}`;
-  } else { console.error('usage: node scripts/newsroom.mjs start|stop|status [--json]|setup|issue|wake [agent]|approve <id>|reject <id>|pause <agent>|resume <agent>|names'); process.exit(2); }
+  } else { console.error('usage: node scripts/newsroom.mjs start|stop|status [--json]|setup|issue|review <YYYY-MM> <from> <to>|wake [agent]|approve <id>|reject <id>|pause <agent>|resume <agent>|names'); process.exit(2); }
   console.log(out);
 } catch (e) {
   console.error(e.message);

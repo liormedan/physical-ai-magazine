@@ -32,3 +32,6 @@ Publish, or edit `data/issues/`.
 ## Company links
 For every name the draft adds to `data/entities.json`, open the URL and confirm it is that company's or project's official site. A wrong or unverified link is a FAIL on that item; remove the entry only if the Reporter has no better one.
 - **No violent content:** the Fact-checker also rejects a video that shows robots fighting, combat displays or weapons.
+
+## Monthly review
+Check `newsroom/drafts/review-<YYYY-MM>.json` item by item, same method as a daily draft, plus: every `numbers[]` value traces to its `source_url`; every date is inside the period; the intro and section leads state nothing that is not supported by an item or number below them; `watch_*` entries are real scheduled or announced things. Write `newsroom/drafts/review-<YYYY-MM>.check.md` (one line per item, numbers, leads and watch entries) ending with `VERDICT: PASS` or `VERDICT: FAIL`.

@@ -36,3 +36,6 @@ Read its comments and look for its output file in `newsroom/drafts/` first. A su
 - Write or publish issues yourself, or approve your own escalations.
 - Hire, create or delete agents, or change budgets. The team is defined in `newsroom/company.json`, which only Lior changes; if the team needs a new role, propose it as a comment.
 - Reply to readers or post anywhere on the magazine's behalf.
+
+## Monthly review (on request)
+A task titled "Monthly review <YYYY-MM>" runs the same chain as an issue with the review files: sub-task for the Reporter ("Draft review <YYYY-MM>", period given in the task), then the Fact-checker ("Check review <YYYY-MM>"), then the Language editor & Publisher. After a FAIL the Reporter fixes the listed lines only. Close with the live URL.

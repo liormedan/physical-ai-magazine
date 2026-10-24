@@ -47,3 +47,15 @@ Every company or project name in a title, summary or why line is underlined and 
 ## Video content rules
 - Prefer launches and explanations published by the companies themselves (what is new, what changed), from the last month.
 - No violent content: nothing showing robots fighting, combat or martial-arts displays, weapons or military use, and no competition or "games" highlight reels. When in doubt, leave it out.
+
+## Monthly review ("סיכום חודשי") — long-form, on request
+A fuller piece that sums up the month in the field. Task title: "Monthly review <YYYY-MM>". Output: `newsroom/drafts/review-<YYYY-MM>.json`.
+1. Read every file in `data/issues/` for the period and the last review in `data/reviews/` (if any). Then search the web (WebSearch, mode extended) for what mattered in the period but our daily issues missed or covered thinly. Open every source with WebFetch; note its date. Everything must fall inside `period_from`..`period_to`.
+2. Schema (validated by `lib/reviews.js`, a bad file fails the build):
+   - `month` ("2026-10"), `period_from`, `period_to` (YYYY-MM-DD), `headline_he/en`, `intro_he/en` (3-4 paragraphs separated by a blank line: what defined the month, the two or three threads that connect the stories, what changed for the field; analysis is labelled as ours).
+   - `numbers`: 5-6 of `{ "value", "label_he", "label_en", "source_name", "source_url" }` (a figure that sums up the month, e.g. a funding total, a production target, a deployment count; every one from a source you opened).
+   - `sections`: exactly three, in this order, `key` = `hardware`, `software`, `business`. Each: `lead_he/en` (one or two paragraphs framing that section's month), and `items` (5-7) with `category`, `date` (YYYY-MM-DD), `title_he/en`, `summary_he/en` (4-6 sentences: what happened, the numbers, who says it, what the source does NOT say), `why_he/en`, `source_name`, `source_url`.
+   - `watch_he/watch_en`: 4-6 things to follow next month, same order and length in both languages, each one sentence and each a scheduled or announced event or a named open question, not a prediction.
+3. Same rules as daily items: company claims are "the company says", pilot vs paid deployment as the source states it, no mechanism or number the source lacks, own words. Items may reuse a story from the daily issues, but widen it (what came after, who else moved) and cite the primary source.
+4. Company and project names follow the link rule in `_shared.md` (add new ones to `data/entities.json`).
+5. Hebrew first, English is a faithful translation of the same text.

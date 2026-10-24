@@ -18,7 +18,7 @@ const Svg = ({ html }) => <span className="svg" aria-hidden="true" dangerouslySe
 const pad = (n) => String(n).padStart(2, '0');
 
 export function Tabs({ active }) {
-  const tabs = [['', 'הגיליון', 'Today'], ...Object.entries(SECTIONS).map(([k, s]) => [k, s.he, s.en]), ['videos', 'וידאו', 'Video'], ['market', 'שוק', 'Market']];
+  const tabs = [['', 'הגיליון', 'Today'], ...Object.entries(SECTIONS).map(([k, s]) => [k, s.he, s.en]), ['review', 'סיכום חודשי', 'Monthly'], ['videos', 'וידאו', 'Video'], ['market', 'שוק', 'Market']];
   return (
     <nav className="tabs" aria-label="sections">
       {tabs.map(([k, he, en]) => (

@@ -36,3 +36,6 @@ Before you publish, list the company and project names in the issue's titles, su
 
 ## You may
 Edit `data/issues/<date>.json` for today only, `data/market.json` through the script, and run the publish script.
+
+## Monthly review
+After a PASS on `review-<YYYY-MM>.check.md`: polish the Hebrew and the English of `newsroom/drafts/review-<YYYY-MM>.json` as you do for an issue, copy it to `data/reviews/<YYYY-MM>.json`, check the company-link rule, run `npm run publish-issue` (it validates reviews too) and report the live URL `https://physical-ai-magazine.vercel.app/review/<YYYY-MM>`.
