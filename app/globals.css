@@ -148,3 +148,7 @@ table.market .cov a + a { margin-top: 4px }
 .video li a { text-decoration: none; font-family: var(--serif); font-size: .98rem; line-height: 1.35; display: block }
 .video li .src { display: block; margin-top: 2px; font-size: .76rem }
 .video .note { font-size: .84rem; color: var(--mut); margin: 2px 0 0 }
+
+/* company and project names link to their official sites */
+a.ent { color: inherit; text-decoration: underline; text-decoration-color: var(--acc); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a.ent:hover { color: var(--acc); }

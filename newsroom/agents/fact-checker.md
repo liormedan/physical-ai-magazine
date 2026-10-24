@@ -28,3 +28,6 @@ One line per item: `NN · PASS|FAIL · <reason if FAIL, with the exact wrong tex
 
 ## You may not
 Publish, or edit `data/issues/`.
+
+## Company links
+For every name the draft adds to `data/entities.json`, open the URL and confirm it is that company's or project's official site. A wrong or unverified link is a FAIL on that item; remove the entry only if the Reporter has no better one.

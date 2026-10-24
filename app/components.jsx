@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { CATEGORIES, SECTIONS, EDITIONS, fmtDate } from '../lib/issues';
 import { coverSvg, catIcon } from '../lib/graphics';
+import { linkParts } from '../lib/entities';
 
 // Both languages are always in the DOM; CSS shows the one in html[data-lang].
 export function Bi({ he, en, as: Tag = 'span', className }) {
@@ -10,6 +11,13 @@ export function Bi({ he, en, as: Tag = 'span', className }) {
       <Tag className={className} lang="en" dir="ltr" data-l="en">{en}</Tag>
     </>
   );
+}
+
+// Text with every known company or project name underlined and linked to its site.
+export function Linked({ text }) {
+  return linkParts(text).map((p, i) => typeof p === 'string'
+    ? p
+    : <a key={i} className="ent" href={p.url} rel="noopener" target="_blank">{p.name}</a>);
 }
 
 const Svg = ({ html }) => <span className="svg" aria-hidden="true" dangerouslySetInnerHTML={{ __html: html }} />;
@@ -60,9 +68,9 @@ function Story({ it, i, lead }) {
       <div className="cat"><Svg html={catIcon(it.category)} /><span className="n">{pad(i + 1)}</span><Bi he={c.he} en={c.en} /></div>
       <div className="body">
         <EditionTag edition={it.edition} />
-        <h2><Bi he={it.title_he} en={it.title_en} /></h2>
-        <p className="sum"><Bi he={it.summary_he} en={it.summary_en} /></p>
-        {it.why_he && <p className="why"><Bi he={`למה זה חשוב: ${it.why_he}`} en={`Why it matters: ${it.why_en}`} /></p>}
+        <h2><Bi he={<Linked text={it.title_he} />} en={<Linked text={it.title_en} />} /></h2>
+        <p className="sum"><Bi he={<Linked text={it.summary_he} />} en={<Linked text={it.summary_en} />} /></p>
+        {it.why_he && <p className="why"><Bi he={<>למה זה חשוב: <Linked text={it.why_he} /></>} en={<>Why it matters: <Linked text={it.why_en} /></>} /></p>}
         <div className="src"><Bi he="מקור" en="Source" />: <a href={it.source_url} rel="noopener" target="_blank">{it.source_name}</a></div>
       </div>
     </article>
@@ -149,7 +157,7 @@ export function SectionList({ items }) {
             <div className="body">
               <EditionTag edition={it.edition} />
               <h2><Link href={`/issues/${it.date}#${it.anchor}`}><Bi he={it.title_he} en={it.title_en} /></Link></h2>
-              <p className="sum"><Bi he={it.summary_he} en={it.summary_en} /></p>
+              <p className="sum"><Bi he={<Linked text={it.summary_he} />} en={<Linked text={it.summary_en} />} /></p>
               <div className="src">
                 <Bi he={fmtDate(it.date, 'he-IL')} en={fmtDate(it.date, 'en-US')} /> · <Bi he="מקור" en="Source" />: <a href={it.source_url} rel="noopener" target="_blank">{it.source_name}</a>
               </div>
