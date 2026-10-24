@@ -1,6 +1,14 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "videos": [
+    {
+      "id": "v-NGxyPjcrE",
+      "title": "NVIDIA GTC Berlin 2026 Keynote With CEO Jensen Huang",
+      "channel": "NVIDIA",
+      "published": "2026-10-23",
+      "note_he": "נאום הפתיחה של Jensen Huang בכנס GTC ברלין 2026.",
+      "note_en": "Jensen Huang's keynote at GTC Berlin 2026."
+    },
     {
       "id": "AoFwpf43wK0",
       "title": "Figure All Hands 2026",

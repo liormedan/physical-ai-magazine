@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-24",
+  "headline_he": "הגבלות ה-FCC מכבידות על ההומנואידים בארה\"ב, וטסלה מתחילה לייצר את Optimus",
+  "headline_en": "FCC curbs weigh on U.S. humanoids as Tesla starts producing Optimus",
+  "intro_he": "גיליון שבת רזה: ניתוח IDC על הגבלות ה-FCC, ולצידו שלושה פריטים מ-48 השעות האחרונות — תחילת ייצור של Optimus בטסלה לפי מאסק, סבב ראשוני לחברת הרובוטיקה השוויצרית Enact Intelligence, ורובוט הומנואידי פלג-גוף עליון של HD Hyundai Robotics עם מודל ראייה-שפה-פעולה (VLA) פנימי. לא נמצא פריט ישראלי שאומת ושהתפרסם בימים האחרונים, ולכן אין כזה בגיליון. הנתונים מדווחים על ידי החברות, אלא אם צוין אחרת.",
+  "intro_en": "A lean Saturday issue: an IDC analysis of the FCC curbs, plus three items from the last 48 hours — Tesla starting Optimus production according to Musk, a pre-seed round for Swiss robotics company Enact Intelligence, and an upper-body humanoid from HD Hyundai Robotics with an in-house VLA model. No verified Israeli item from the last few days was found, so there is none in this issue. Figures are company-reported unless noted.",
+  "items": [
+    {
+      "category": "industry",
+      "title_he": "IDC: הגבלות ה-FCC עלולות לקצץ 58% מהכנסות ההומנואידים בארה\"ב עד 2030",
+      "title_en": "IDC: FCC curbs could cut U.S. humanoid revenue by 58% by 2030",
+      "summary_he": "לפי Fortune, ה-FCC הוסיף ביולי רובוטים מתקדמים מתוצרת חוץ לרשימת המכשירים המכוסים, כך שדגמים חדשים אינם יכולים לקבל את האישור הנדרש לייבוא ומכירה בארה\"ב; דגמים שאושרו קודם ממשיכים להימכר. מודל של IDC מעריך שהכנסות ההומנואידים בארה\"ב יהיו נמוכות ב-58% מהקו הבסיסי שלפני ההגבלות, יותר מ-6 מיליארד דולר, ושצמיחת הענף תרד לכ-9% בשנה מכ-13%. לפי IDC, כ-95% מהמשלוחים העולמיים של הומנואידים מגיעים מיצרניות סיניות.",
+      "summary_en": "Fortune reports the FCC added foreign-produced advanced robotic devices to its Covered List in July, so new models cannot obtain the authorization needed to be imported and sold in the U.S.; previously authorized models can still be sold. An IDC model estimates U.S. humanoid revenue will be 58% below the pre-restriction baseline by 2030, more than $6 billion, with annual sector growth falling to about 9% from about 13%. IDC says Chinese vendors account for roughly 95% of global humanoid shipments.",
+      "why_he": "זו הערכה של IDC ולא עובדה, אבל היא ממחישה למשקיעים שסיכון רגולטורי ושרשרת אספקה סינית הם משתנים מרכזיים בתמחור חברות הומנואידים אמריקאיות.",
+      "why_en": "This is IDC's estimate, not a fact, but it shows investors that regulatory risk and a China-centred supply chain are central variables in pricing U.S. humanoid companies.",
+      "source_name": "Fortune",
+      "source_url": "https://fortune.com/2026/10/23/fcc-robot-ban-humanoid-revenue-idc/"
+    },
+    {
+      "why_en": "This is Musk's statement, not verified production data; for investors the question is whether the stated output and the hand and durability work advance at the promised pace.",
+      "why_he": "זו הצהרה של מאסק ולא נתון ייצור מאומת; למשקיעים השאלה היא אם ההספק המוצהר ויכולת הידיים והעמידות יתקדמו בקצב שהובטח.",
+      "title_he": "מאסק: טסלה התחילה לייצר את Optimus במפעל פרמונט",
+      "category": "humanoids",
+      "source_name": "ABC30 (Fresno)",
+      "summary_he": "לפי אילון מאסק, טסלה החלה לייצר את הרובוט ההומנואידי Optimus במפעל פרמונט שבקליפורניה, ואלה \"רובוטים ראשונים באיכות ייצור\". מאסק צופה קצב של 20,000 רובוטים בשבוע בעוד כשנה, ושהמסירות ללקוחות יתחילו בשלהי השנה הבאה. הוא הוסיף שחלק מההיבטים עדיין דורשים התאמה ובדיקות לפני פריסה. אלה הצהרות של מאסק; המקור אינו מציין פריסה בתשלום או לקוחות.",
+      "title_en": "Musk: Tesla has started producing Optimus at Fremont",
+      "source_url": "https://abc30.com/post/tesla-begins-production-optimus-humanoid-robot/19971232/",
+      "summary_en": "According to Elon Musk, Tesla has started producing its Optimus humanoid at the Fremont, California factory, which he called its first production-quality robots. He expects output of 20,000 robots a week in about a year and deliveries to begin late next year. He added that some aspects still need adjustment and testing before deployment. These are Musk's statements; the source names no paid deployment or customers."
+    },
+    {
+      "why_en": "A large round for a company with no reported customers shows investor appetite for cross-embodiment models and touch sensing, but there is no product or results to assess yet.",
+      "why_he": "סבב גדול לחברה ללא לקוחות מדווחים מעיד על התעניינות משקיעים במודלים חוצי-גוף ובחישת מגע, אך אין עדיין מוצר או תוצאות לבחון.",
+      "title_he": "Enact Intelligence יוצאת מהחשאיות עם 30 מיליון דולר בסבב פרה-סיד",
+      "category": "models",
+      "source_name": "SiliconANGLE",
+      "summary_he": "החברה השוויצרית (רשומה כ-Eta Robotics AG), בהובלת מנכ\"ל Manuel Yves Galliker שעבד בעבר ב-Physical Intelligence וב-1X, גייסה 30 מיליון דולר, בין המשקיעים Yann LeCun, Arthur Mensch מ-Mistral ו-Thomas Wolf מ-Hugging Face. היא מפתחת מודלים לשליטה ברובוטים שאינם קשורים לצורת רובוט אחת, ומפעילים שמרגישים כוח ומגע; החברה לא הסבירה איך הם פועלים. המקור אינו מציין לקוחות, פיילוטים או פריסה.",
+      "title_en": "Enact Intelligence emerges with $30M pre-seed",
+      "source_url": "https://siliconangle.com/2026/10/22/robotics-startup-enact-intelligence-nabs-30m-funding-round/",
+      "summary_en": "The Swiss company (registered as Eta Robotics AG), led by CEO Manuel Yves Galliker, formerly of Physical Intelligence and 1X, raised $30 million; investors include Yann LeCun, Mistral AI CEO Arthur Mensch and Hugging Face co-founder Thomas Wolf. It is building robot-control models not tied to one robot form factor, and actuators it says sense force and touch; it has not explained how they work. The source names no customers, pilots or deployment."
+    },
+    {
+      "why_en": "An in-house model instead of a licence points to industrial makers wanting to own the software layer, but without benchmarks it cannot be compared with rivals.",
+      "why_he": "מודל פנימי במקום רישיון מצביע על רצון של יצרניות תעשייתיות להחזיק את שכבת התוכנה, אך בלי מדדים אי אפשר להשוות אותו למתחרים.",
+      "title_he": "HD Hyundai Robotics חושפת רובוט דו-זרועי עם מודל ראייה-שפה-פעולה (VLA) פנימי",
+      "category": "robotics",
+      "source_name": "Tech Times",
+      "summary_he": "לפי Tech Times, החברה הציגה רובוט פלג-גוף עליון ללא רגליים, עם עשר אצבעות, שנשלט במלואו על ידי מודל ראייה-שפה-פעולה פנימי ולא ברישיון של NVIDIA או חברה אחרת. הוא כולל חיישן כוח-מומנט בפרק היד ומערכי מגע באצבעות מבית Aidin Robotics. השימוש הקרוב מתמקד בחבילות והרכבה, ובהמשך ריתוך וכרסום; החברה תפרסם מקרי שימוש ומדדים בהדרגה. לא נחשפו ארכיטקטורת המודל, נתוני האימון, מדדי ביצוע או מועד זמינות; המקור הוא דיווח עיתונאי ולא הודעת החברה.",
+      "title_en": "HD Hyundai Robotics unveils dual-arm robot with in-house VLA model",
+      "source_url": "https://www.techtimes.com/articles/329364/20261022/house-robot-brain-hd-hyundai-debuts-dual-arm-physical-ai-platform-its-own-model.htm",
+      "summary_en": "Per Tech Times, the company showed an upper-body, legless robot with ten fingers controlled entirely by an in-house vision-language-action model rather than one licensed from NVIDIA or another vendor. It has a wrist force-torque sensor and fingertip tactile arrays from Aidin Robotics. Near-term use targets bundling and assembly, later welding and milling; the company says it will publish use cases and metrics in stages. Model architecture, training data, performance benchmarks and availability were not disclosed; the source is a press report, not the company release."
+    }
+  ]
+}
