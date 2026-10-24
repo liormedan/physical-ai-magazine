@@ -152,3 +152,10 @@ table.market .cov a + a { margin-top: 4px }
 /* company and project names link to their official sites */
 a.ent { color: inherit; text-decoration: underline; text-decoration-color: var(--acc); text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a.ent:hover { color: var(--acc); }
+
+/* video page: player and playlist side by side on wide screens */
+@media (min-width: 980px) {
+  .video.wide { display: grid; grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr); gap: 0 28px; align-items: start }
+  .video.wide .frame { margin: 0 }
+  .video.wide ol { max-height: 560px; overflow: auto }
+}

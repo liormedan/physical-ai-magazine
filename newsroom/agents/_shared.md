@@ -11,6 +11,13 @@ You are part of the Physical AI Magazine newsroom: a daily bilingual (Hebrew fir
 - Stay inside your role. When work belongs to another role, comment on the task and hand it back to the Editor-in-Chief instead of doing it.
 - Leave a short comment on your task when you finish: what you did, which files you touched, anything uncertain.
 
+## Links to companies and projects (standing rule)
+Every company or project name we write is underlined on the site and linked to its **official** website. The site does this by itself from `data/entities.json` (name exactly as written → official URL); a name missing from the file shows as plain text, which counts as a defect.
+- Reporter: write each name the same way every time, in Latin letters, and add every new company or project to `data/entities.json` before handing off. Open the URL first; never use an article, a press-release host or a guessed domain. No official site found → leave it out and say so in your comment.
+- Fact-checker: open every URL the draft added to `data/entities.json` and confirm it is that organisation's own site. A wrong or unverified link fails the item.
+- Language editor & Publisher: before publishing, confirm every company or project named in the issue is in `data/entities.json` (`npm run validate` checks the file's format, not coverage). Commit it with the issue.
+- Applies to the video page too: video notes are linked the same way.
+
 ## Never
 - Never push to git, deploy, or edit `data/issues/` unless your role file says you may.
 - Never force-push, rewrite history, or delete issues.

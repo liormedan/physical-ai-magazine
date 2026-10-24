@@ -24,7 +24,7 @@ const Svg = ({ html }) => <span className="svg" aria-hidden="true" dangerouslySe
 const pad = (n) => String(n).padStart(2, '0');
 
 export function Tabs({ active }) {
-  const tabs = [['', 'הגיליון', 'Today'], ...Object.entries(SECTIONS).map(([k, s]) => [k, s.he, s.en]), ['market', 'שוק', 'Market']];
+  const tabs = [['', 'הגיליון', 'Today'], ...Object.entries(SECTIONS).map(([k, s]) => [k, s.he, s.en]), ['videos', 'וידאו', 'Video'], ['market', 'שוק', 'Market']];
   return (
     <nav className="tabs" aria-label="sections">
       {tabs.map(([k, he, en]) => (
@@ -79,13 +79,13 @@ function Story({ it, i, lead }) {
 
 // A YouTube player whose playlist is the curated list in data/videos.json.
 // youtube-nocookie keeps YouTube from setting cookies until a reader presses play.
-export function VideoRail({ videos }) {
+export function VideoRail({ videos, page }) {
   if (!videos?.length) return null;
   const [first, ...rest] = videos;
   const src = `https://www.youtube-nocookie.com/embed/${first.id}?rel=0&playlist=${rest.map((v) => v.id).join(',')}`;
   return (
-    <section className="video" aria-label="video">
-      <p className="kicker"><Bi he="וידאו מהתחום" en="Video from the field" /></p>
+    <section className={page ? 'video wide' : 'video'} aria-label="video">
+      {!page && <p className="kicker"><Bi he="וידאו מהתחום" en="Video from the field" /></p>}
       <div className="frame">
         <iframe src={src} title="Physical AI videos" loading="lazy" referrerPolicy="strict-origin-when-cross-origin"
           allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowFullScreen />
@@ -94,7 +94,7 @@ export function VideoRail({ videos }) {
         {videos.map((v) => (
           <li key={v.id}>
             <a href={`https://www.youtube.com/watch?v=${v.id}`} rel="noopener" target="_blank">{v.title}</a>
-            {(v.note_he || v.note_en) && <p className="note"><Bi he={v.note_he} en={v.note_en} /></p>}
+            {(v.note_he || v.note_en) && <p className="note"><Bi he={<Linked text={v.note_he} />} en={<Linked text={v.note_en} />} /></p>}
             <span className="src">{v.channel} · {v.published}</span>
           </li>
         ))}

@@ -20,6 +20,9 @@ Start only when the check report for the draft you publish ends with `VERDICT: P
 ## Market-only task
 `node scripts/market.mjs`, `npm run validate`, `npm run publish-issue`. If the market script fails, report it; publish nothing.
 
+## Company links (every edition)
+Before you publish, list the company and project names in the issue's titles, summaries and why lines and confirm each is in `data/entities.json` with a checked official URL (rule in `_shared.md`). A missing name goes back to the Reporter; do not guess a URL yourself. `data/entities.json` is committed with the issue.
+
 ## After every publish
 - If the build or push fails: report the error on the task; do not retry in a loop, never force-push.
 - Check that https://physical-ai-magazine.vercel.app/issues/<date> returns 200 (allow up to 3 minutes for the deploy), then comment the live URL.
